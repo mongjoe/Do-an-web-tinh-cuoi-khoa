@@ -53,9 +53,9 @@
  transform:scale(0.95);
 
 }
-.product-below{
-  padding-left:2px;
-padding-right: 2px;
+
+.product-below-1 {
+
 
 border-color:
 #f5f6f9;
@@ -69,6 +69,8 @@ line-height:
 19.6px;
 padding:
 5px;
+border-right: none;
+border-bottom: none;
 
 
 }

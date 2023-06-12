@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head> 
@@ -28,6 +29,11 @@ integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJ
 crossorigin="anonymous"
 />
 <link href="https://fonts.cdnfonts.com/css/helvetica-2" rel="stylesheet">
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  
     
     <link rel="stylesheet" href="index.css"/>
 
@@ -35,36 +41,39 @@ crossorigin="anonymous"
   <body>
     <main class="main">
 
-      <div class="container-header">
-        <div class="row">
+     <div class="container-header p-0 g-0">
+        <div class="row g-0">
           <!-- <div class="col-12"> -->
-            <section class="section section-movies">
+            <section class="section section-movies p-0">
               <div class="section-header align-item-center">
-                <nav class="navbar navbar-expand-lg bg-white text-dark pt-0 pb-0">
-                  <div class="container align-item-center p-0">
-                    <div class="image-parent m-0 p-0 position-relative d-flex bg-white align-item-center justify-content-center ">
-                    <div class="icon  ms-5 ps-2 bg-white ">
+                <div class="image-parent  p-0 position-relative d-flex bg-white align-item-center justify-content-center ">
+                    <div class="icon pt-2 bg-white ">
                     <a href="./index.html"> 
-                    <img src="./images/ok1.png" 
+                    <img src="./images/logo.png" 
                     width="100" height=100">
                     </a>
                     </div>
                     </div>
-       <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <nav class="navbar navbar-expand-lg bg-white text-dark pt-0 pb-0 g-0">
+                  <div class="container-fluid d-flex position-relative navbar-small align-item-center m-0 p-0">
+
+                    
+                    
+       <button class="navbar-toggler ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
          <span class="navbar-toggler-icon"></span>
        </button>
-       <div class="collapse navbar-collapse justify-content-center ps-5 ms-5" id="navbarNavDropdown">
+       <div class="collapse navbar-collapse navbar-part " id="navbarNavDropdown">
          <ul
-                     class="nav nav-underline align-items-baseline "
+                     class="navbar-items nav nav-underline align-items-baseline "
                      id="myTab"
                      role="tablist"
                    >
          <ul class="navbar-nav fw-bold h6 d-flex p-0">
-            <li class="nav-item p-0 ps-1">
+            <li class="nav-item p-0 p-2">
              <a class="nav-link" href="./index.html">Trang Chủ</a>
            </li>
 
-           <li class="nav-item dropdown ps-1">
+           <li class="nav-item dropdown p-2">
              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                Sản Phẩm
              </a>
@@ -78,7 +87,7 @@ crossorigin="anonymous"
                <li><a class="dropdown-item" href="#">Thiêt Bị Âm Thanh & Phòng Thu</a></li>
               </ul>
             </li>
-            <li class="nav-item dropdown ps-1">
+            <li class="nav-item dropdown p-2">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
              Thương Hiệu
               </a>
@@ -92,34 +101,45 @@ crossorigin="anonymous"
                 <li><a class="dropdown-item" href="#">D'addario</a></li>            
               </ul>
             </li>
-             <li class="nav-item ps-1">
+             <li class="nav-item p-2">
               <a class="nav-link" href="#">Blog</a>
             </li>
-            <li class="nav-item ps-1">
+            <li class="nav-item p-2">
               <a class="nav-link" href="#">Giới Thiệu</a>
             </li>
-            <li class="nav-item ps-1">
+            <li class="nav-item p-2">
               <a class="nav-link" href="#">Liên Hệ</a>
             </li>
           </ul>
         </ul>
       </div>
       
-      <div class="Right-object justify-content-center d-flex align-items-baseline ">
+      <div class="Right-object fluid me-5 d-flex  position-relative justify-content-center align-items-center">
+        <div class="d-flex position-relative justify-content-center align-items-center">          
+
+        
+          <button class="search-button position-relative pt-1" type="submit"> <img src="./images/search.png" style="width: 28px ; height: 28px;" >
+          </button>
           
-        <div class="d-flex position-relative ps-3 me-2  justify-content-center " role="search">
-         <input class=" my-input-form mt-1 pe-3 ps-1 ms-3 border-secondary border-top-0 border-start-0 border-end-0 border-dark " type="search" placeholder="Tìm kiếm" aria-label="Search">
-         <button class="search-button position-relative ps-1" type="submit"> <img src="./images/rightSide/search.png" style="width: 26px ; height: 26px;" ></button>
-          </div>
-          <div class="user-and-cart d-flex justify-content-center">            
-          <button class="user position-relative fs-4 "> <i class="bi bi-person"></i></button>
-          <button class="cart position-relative fluid fs-5  pe-0 pb-2 me-0 mt-1" ><i class="bi bi-cart2"></i></button>
+         
+          <button class="user position-relative "> <img src="./images/user.png" style="height: 28px ; width:28px"> </style> 
+        </button>
+
+          <button class="cart position-relative p-0" >
+
+            
+            <img src="./images/cart.png" style="height: 28px ; width:28px"> </style> 
+          </button>
+
+        </div>
           </div>
       </div>
       </div>
+
     </nav>
+    
   </div>
-</div>
+
 </div>
  </section>
 </div> 
@@ -157,7 +177,7 @@ crossorigin="anonymous"
         <div class="row">
           <div class="col-12 p-2">
             <div class="FeaturedProducts m-4 text-center" >
-              <a class="text-decoration-none" href=""> <h3> Sản Phẩm Nổi Bật </h3> </a> 
+              <a class="text-decoration-none" href="./Products.html"> <h3> Sản Phẩm Nổi Bật </h3> </a> 
               <div class="d-flex justify-content-center pt-2" >
                 <div style="width:100px ; border-top: 1px solid black; ">
                 </div>
@@ -165,13 +185,13 @@ crossorigin="anonymous"
             </div>
 
             
-            <div class="row mx-auto my-auto justify-content-center">
+            <div class="row mx-auto my-auto justify-content-center align-item-center">
 
   <div id="carouselExampleControls" class="carousel" data-bs-ride="carousel">
-    <div class="carousel-inner slider-inside">
+    <div class="carousel-inner slider-inside border-0">
 
       
-        <div class="carousel-item active slider-group col-12 col-sm-6 col-md-4 col-lg-3  position-relative">
+        <div class="carousel-item active border-0 slider-group col-12 col-sm-6 col-md-4 col-lg-3  justify-content-center position-relative">
  
 
                         <div> <a href="" class="card text-decoration-none">
@@ -184,12 +204,12 @@ crossorigin="anonymous"
                  </a>
             </div>
         </div>
-        <div class="carousel-item slider-group">
+        <div class="carousel-item  border-0 slider-group col-12 col-sm-6 col-md-4 col-lg-3  justify-content-center position-relative">
  
 
                         <div> <a href="" class="card text-decoration-none">
 
-                <div class="  img-wrapper mt-4 mb-4"><img src="./images/FeaturedProducts/electric.jpg" class="d-block w-100" alt="..."> </div>
+                <div class="  img-wrapper mt-4 mb-4"><img src="./images/FeaturedProducts/electric.jpg" class=" d-block w-100" alt="..."> </div>
                 <div class="card-body  position-relative">
                     <h5 class=" card-title text-center">Electric Guitar</h5>
                     <p class="product-price fs-5 fw-bolder text-center">6,200,000đ</p>
@@ -197,7 +217,7 @@ crossorigin="anonymous"
                  </a>
             </div>
         </div>
-        <div class="carousel-item slider-group">
+        <div class="carousel-item slider-group border-0 col-12 col-sm-6 col-md-4 col-lg-3   justify-content-center position-relative">
  
                         <div> <a href="" class="card text-decoration-none">
 
@@ -209,11 +229,11 @@ crossorigin="anonymous"
                  </a>
             </div>
         </div>
-        <div class="carousel-item slider-group">
+        <div class="carousel-item border-0 slider-group col-12 col-sm-6 col-md-4 col-lg-3   justify-content-center position-relative">
  
                         <div> <a href="" class="card text-decoration-none">
 
-                <div class="  img-wrapper position-relative mt-4 mb-4"><img src="./images/FeaturedProducts/Classic.png" class="d-block w-100" alt="..."> </div>
+                <div class="  img-wrapper  mt-4 mb-4"><img src="./images/FeaturedProducts/Classic.png" class="d-block w-100" alt="..."> </div>
                 <div class="card-body  position-relative">
                     <h5 class=" card-title text-center">Classic Guitar</h5>
                     <p class="product-price fs-5 fw-bolder text-center">3,500,000đ</p>
@@ -221,10 +241,10 @@ crossorigin="anonymous"
                  </a>
             </div>
         </div>
-        <div class="carousel-item border-0 slider-group">
+        <div class="carousel-item border-0 slider-group  col-12 col-sm-6 col-md-4 col-lg-3   justify-content-center position-relative">
                         <div> <a href="" class="card text-decoration-none">
 
-                <div class="  img-wrapper position-relative mt-4 mb-4"><img src="./images/FeaturedProducts/taylor.png" class="d-block w-100" alt="..."> </div>
+                <div class="  img-wrapper  mt-4 mb-4"><img src="./images/FeaturedProducts/taylor.png" class="d-block w-100" alt="..."> </div>
                 <div class="card-body  position-relative">
                     <h5 class=" card-title text-center">Acoustic Taylor 110E</h5>
                     <p class="product-price fs-5 fw-bolder text-center">20,000đ</p>
@@ -232,9 +252,9 @@ crossorigin="anonymous"
                  </a>
             </div>
         </div>
-        <div class="carousel-item slider-group">
+        <div class="carousel-item slider-group border-0 col-12 col-sm-6 col-md-4 col-lg-3  justify-content-center position-relative">
             <div> <a href="" class="card text-decoration-none">
-                <div class="  img-wrapper position-relative mt-4 mb-4"><img src="./images/FeaturedProducts/Pickup Fishman.png" class="d-block w-100" alt="..."> </div>
+                <div class="  img-wrapper  mt-4 mb-4"><img src="./images/FeaturedProducts/Pickup Fishman.png" class=" d-block w-100" alt="..."> </div>
                 <div class="card-body  position-relative">
                     <h5 class=" card-title text-center">Pickup Fishman</h5>
                     <p class="product-price fs-5 fw-bolder text-center">1,00,000đ</p>
@@ -242,7 +262,7 @@ crossorigin="anonymous"
                  </a>
             </div>
         </div>
-        <div class="carousel-item slider-group">
+        <div class="carousel-item slider-group  border-0 col-12 col-sm-6 col-md-4 col-lg-3  justify-content-center position-relative">
                         <div> <a href="" class="card text-decoration-none">
 
                 <div class="  img-wrapper mt-4 mb-4"><img src="./images/FeaturedProducts/cajon.png" class="d-block w-100" alt="..."> </div>
@@ -343,16 +363,16 @@ crossorigin="anonymous"
 </div>
 </div>
 
-<div class="col-12 mt-4">
-<div class="container px-0 m-0">
+<div class="col-12 ">
+<div class="container ./ `  px-0 m-0">
 <div class="row g-0 flex_content  justify-content-center d-flex justify-content-between">
 
-<div class="container-fluid p-0">
+<div class="container-fluid p-0 bg-light">
                   
 
 
                         <div class="best-seller m-4 text-center" >
-                           <a class="text-decoration-none" href=""> <h3> Sản Phẩm Bán Chạy </h3> </a> 
+                           <a class="text-decoration-none" href="./Products.html"> <h3> Sản Phẩm Bán Chạy </h3> </a> 
                           <div class="d-flex justify-content-center pt-2" >
                             <div style="width:100px ; border-top: 1px solid black; ">
                             </div>
@@ -368,8 +388,8 @@ crossorigin="anonymous"
                               >
                               <div class="container-fluid p-0">
                               <div class="row g-0">
-                                <div class="product-below-1 col-6 col-sm-4 col-md-2 col-lg-2 ">
-                               <div class="p-2">
+                                <div class="product-below-1 col-6 col-sm-4 col-md-4 col-lg-2 ">
+                               <div class="pt-2 ps-4 pe-4 pb-1">
                                                          <article class="series position-relative">
                                                            <a href="" class="series-link d-block text-decoration-none">
                                                              <img
@@ -380,7 +400,7 @@ crossorigin="anonymous"
                                                                  class="discount-logo position-absolute top-0 start-0   rounded-end-2 fs-6 p-1 shadow-sm"
                                                                  >-33%</span
                                                                >
-                                                               <article class="series-title position-relative bottom-0 align-item-center start-0 end-0 bg-white  text-dark text-center mt-5  "
+                                                               <article class="series-title position-relative bottom-0 align-item-center start-0 end-0 bg-white  text-dark text-center mt-3  "
                                                                >
                                                                  <div class="product-title ">Dây Đàn Guitar Acoustic Elixir 16002 Acoustic 10-47 Phosphor Bronze Nanoweb</div>
                                                                  <div class=" position-relative pb-2 fs-5 fw-bolder">380,000₫</div>
@@ -391,8 +411,8 @@ crossorigin="anonymous"
                                                            </div>
                                 </div>
 
-                                <div class=" product-below-2 col-6 col-sm-4 col-md-2 col-lg-2  ">
-                               <div class="p-2">
+                                <div class=" product-below-2 col-6 col-sm-4 col-md-4 col-lg-2  ">
+                               <div class="pt-2 ps-4 pe-4 pb-1">
                                                          <article class="series position-relative">
                                                            <a href="" class="series-link d-block text-decoration-none">
                                                              <img
@@ -403,7 +423,7 @@ crossorigin="anonymous"
                                                                  class="discount-logo position-absolute top-0 start-0   rounded-end-2 fs-6 p-1 shadow-sm"
                                                                  >-19%</span
                                                                >
-                                                               <article class="series-title osition-relative bottom-0 align-item-center start-0 end-0 bg-white  text-dark text-center mt-5 "
+                                                               <article class="series-title osition-relative bottom-0 align-item-center start-0 end-0 bg-white  text-dark text-center mt-3 "
                                                                >
                                                                  <div class="product-title ">Dây Đàn Guitar Elixir 16027 Acoustic 11-52 Phosphor Nano</div>
                                                                  <div class=" position-relative pb-2 fs-5 fw-bolder ">380,000đ</div>
@@ -416,8 +436,8 @@ crossorigin="anonymous"
                       
                                 
                       
-                                <div class=" product-below-2  col-6 col-sm-4 col-md-2 col-lg-2  ">
-                               <div class="p-2">
+                                <div class=" product-below-2  col-6 col-sm-4 col-md-4 col-lg-2  ">
+                               <div class="pt-2 ps-4 pe-4 pb-1">
                                                          <article class="series position-relative">
                                                            <a href="" class="series-link d-block text-decoration-none">
                                                              <img
@@ -428,7 +448,7 @@ crossorigin="anonymous"
                                                                  class="discount-logo position-absolute top-0 start-0   rounded-end-2 fs-6 p-1 shadow-sm"
                                                                  >-19%</span
                                                                >
-                                                               <div class="series-title osition-relative bottom-0 align-item-center start-0 end-0 bg-white  text-dark text-center mt-5 "
+                                                               <div class="series-title osition-relative bottom-0 align-item-center start-0 end-0 bg-white  text-dark text-center mt-3 "
                                                                >
                                                                <div class="product-title">Dây Đàn Guitar Elixir 16027 Acoustic 11-52 Phosphor Nano</div>
                                                                <div class=" position-relative pb-2 fs-5 fw-bolder">380,000đ</div>
@@ -438,8 +458,8 @@ crossorigin="anonymous"
                                                            </div>
                                 </div>
                       
-                                <div class=" product-below-2  col-6 col-sm-4 col-md-2 col-lg-2  ">
-                               <div class="p-2">
+                                <div class=" product-below-2  col-6 col-sm-4 col-md-4 col-lg-2  ">
+                               <div class="pt-2 ps-4 pe-4 pb-1">
                                                          <article class="series position-relative">
                                                            <a href="" class="series-link d-block text-decoration-none">
                                                              <img
@@ -450,7 +470,7 @@ crossorigin="anonymous"
                                                                  class="discount-logo position-absolute top-0 start-0   rounded-end-2 fs-6 p-1 shadow-sm"
                                                                  >-26%</span
                                                                >
-                                                               <div class="series-title osition-relative bottom-0 align-item-center start-0 end-0 bg-white  text-dark text-center mt-5 "
+                                                               <div class="series-title osition-relative bottom-0 align-item-center start-0 end-0 bg-white  text-dark text-center mt-3 "
                                                                >
                                                                <div class="product-title">Dùi trống Vic Firth American Classic 7A</div>
                                                                <div class=" position-relative pb-2 fs-5 fw-bolder">300,000đ</div>
@@ -460,8 +480,8 @@ crossorigin="anonymous"
                                                            </div>
                                 </div>
 
-                                <div class=" product-below-2 col-6 col-sm-4 col-md-2 col-lg-2  ">
-                               <div class="p-2">
+                                <div class=" product-below-2 col-6 col-sm-4 col-md-4 col-lg-2  ">
+                               <div class="pt-2 ps-4 pe-4 pb-1">
                                                          <article class="series position-relative">
                                                            <a href="" class="series-link d-block text-decoration-none">
                                                              <img
@@ -472,7 +492,7 @@ crossorigin="anonymous"
                                                                  class="discount-logo position-absolute top-0 start-0   rounded-end-2 fs-6 p-1 shadow-sm"
                                                                  >-33%</span
                                                                >
-                                                               <div class="series-title position-relative bottom-0 align-item-center start-0 end-0 bg-white  text-dark text-center mt-5 "
+                                                               <div class="series-title position-relative bottom-0 align-item-center start-0 end-0 bg-white  text-dark text-center mt-3 "
                                                                >
                                                                <div class="product-title">Fishman Prefix Pro Blend</div>
                                                                <div class=" position-relative pb-2 fs-5 fw-bolder">8,000,000đ</div>
@@ -482,8 +502,8 @@ crossorigin="anonymous"
                                                            </div>
                                 </div>
 
-                                 <div class="product-below-3  col-6 col-sm-4 col-md-2 col-lg-2  ">
-                               <div class="p-2">
+                                 <div class="product-below-3  col-6 col-sm-4 col-md-4 col-lg-2  ">
+                               <div class="pt-2 ps-4 pe-4 pb-1">
                                                          <article class="series position-relative">
                                                            <a href="" class="series-link d-block text-decoration-none">
                                                              <img
@@ -494,7 +514,7 @@ crossorigin="anonymous"
                                                                  class="discount-logo position-absolute top-0 start-0   rounded-end-2 fs-6 p-1 shadow-sm"
                                                                  >-26%</span
                                                                >
-                                                               <div class="series-title position-relative bottom-0 align-item-center start-0 end-0 bg-white  text-dark text-center mt-5 "
+                                                               <div class="series-title position-relative bottom-0 align-item-center start-0 end-0 bg-white  text-dark text-center mt-3 "
                                                                >
                                                                <div class="product-title">GUITAR ĐIỆN FENDER SQUIER BULLET STRATOCASTER HSS FAT ARCTIC WHITE</div>
                                                                <div class=" position-relative pb-2 fs-5 fw-bolder">5,500,000đ</div>
@@ -504,8 +524,8 @@ crossorigin="anonymous"
                                                            </div>
                                 </div>
 
-                                 <div class="product-below-4  col-6 col-sm-4 col-md-2 col-lg-2  ">
-                               <div class="p-2">
+                                 <div class="product-below-4  col-6 col-sm-4 col-md-4 col-lg-2  ">
+                               <div class="pt-2 ps-4 pe-4 pb-1">
                                                          <article class="series position-relative">
                                                            <a href="" class="series-link d-block text-decoration-none">
                                                              <img
@@ -516,7 +536,7 @@ crossorigin="anonymous"
                                                                  class="discount-logo position-absolute top-0 start-0   rounded-end-2 fs-6 p-1 shadow-sm"
                                                                  >-19%</span
                                                                >
-                                                               <div class="series-title position-relative bottom-0 align-item-center start-0 end-0 bg-white  text-dark text-center mt-5 "
+                                                               <div class="series-title position-relative bottom-0 align-item-center start-0 end-0 bg-white  text-dark text-center mt-3 "
                                                                >
                                                                <div class="product-title">Cajon Meinl WC100B</div>
                                                                <div class=" position-relative pb-2 fs-5 fw-bolder">3,500,000đ</div>
@@ -526,8 +546,8 @@ crossorigin="anonymous"
                                                            </div>
                                 </div>
 
-                                 <div class=" product-below-5 col-6 col-sm-4 col-md-2 col-lg-2  ">
-                               <div class="p-2">
+                                 <div class=" product-below-5 col-6 col-sm-4 col-md-4 col-lg-2  ">
+                               <div class="pt-2 ps-4 pe-4 pb-1">
                                                          <article class="series position-relative">
                                                            <a href="" class="series-link d-block text-decoration-none">
                                                              <img
@@ -538,7 +558,7 @@ crossorigin="anonymous"
                                                                  class="discount-logo position-absolute top-0 start-0   rounded-end-2 fs-6 p-1 shadow-sm"
                                                                  >-33%</span
                                                                >
-                                                               <div class="series-title position-relative bottom-0 align-item-center start-0 end-0 bg-white  text-dark text-center mt-5 "
+                                                               <div class="series-title position-relative bottom-0 align-item-center start-0 end-0 bg-white  text-dark text-center mt-3 "
                                                                >
                                                                <div class="product-title">GUITAR ĐIỆN SQUIER AFFINITY STRAT FMT HSS MN BPG BBST</div>
                                                                <div class=" position-relative pb-2 fs-5 fw-bolder">8,900,000đ</div>
@@ -548,8 +568,8 @@ crossorigin="anonymous"
                                                            </div>
                                 </div>
 
-                                 <div class="product-below-5  col-6  col-sm-4 col-md-2 col-lg-2  ">
-                               <div class="p-2">
+                                 <div class="product-below-5  col-6  col-sm-4 col-md-4 col-lg-2  ">
+                               <div class="pt-2 ps-4 pe-4 pb-1">
                                                          <article class="series position-relative">
                                                            <a href="" class="series-link d-block text-decoration-none">
                                                              <img
@@ -560,7 +580,7 @@ crossorigin="anonymous"
                                                                  class="discount-logo position-absolute top-0 start-0   rounded-end-2 fs-6 p-1 shadow-sm"
                                                                  >-26%</span
                                                                >
-                                                               <div class="series-title position-relative bottom-0 align-item-center start-0 end-0 bg-white  text-dark text-center mt-5 "
+                                                               <div class="series-title position-relative bottom-0 align-item-center start-0 end-0 bg-white  text-dark text-center mt-3 "
                                                                >
                                                                <div class="product-title">Elixir 12000 Electric 09-42 Polyweb</div>
                                                                <div class=" position-relative pb-2 fs-5 fw-bolder">300,000đ</div>
@@ -569,8 +589,8 @@ crossorigin="anonymous"
                                                            </article>   
                                                            </div>
                                 </div>
-                                <div class=" product-below-5 col-6 col-sm-4 col-md-2 col-lg-2  ">
-                               <div class="p-2">
+                                <div class=" product-below-5 col-6 col-sm-4 col-md-4 col-lg-2  ">
+                               <div class="pt-2 ps-4 pe-4 pb-1">
                                                          <article class="series position-relative">
                                                            <a href="" class="series-link d-block text-decoration-none">
                                                              <img
@@ -581,7 +601,7 @@ crossorigin="anonymous"
                                                                  class="discount-logo position-absolute top-0 start-0   rounded-end-2 fs-6 p-1 shadow-sm"
                                                                  >-19%</span
                                                                >
-                                                               <div class="series-title position-relative bottom-0 align-item-center start-0 end-0 bg-white  text-dark text-center mt-5 "
+                                                               <div class="series-title position-relative bottom-0 align-item-center start-0 end-0 bg-white  text-dark text-center mt-3 "
                                                                >
                                                                <div class="product-title">Martin Junior Series 000Jr-10 Acoustic Guitar w/Bag</div>
                                                                <div class=" position-relative pb-2 fs-5 fw-bolder">14,000,000đ</div>
@@ -590,8 +610,8 @@ crossorigin="anonymous"
                                                            </article>   
                                                            </div>
                                 </div>
-                                <div class="product-below-5 col-6 col-sm-4 col-md-2 col-lg-2  ">
-                               <div class="p-2">
+                                <div class="product-below-5 col-6 col-sm-4 col-md-4 col-lg-2  ">
+                               <div class="pt-2 ps-4 pe-4 pb-1">
                                                          <article class="series position-relative">
                                                            <a href="" class="series-link d-block text-decoration-none">
                                                              <img
@@ -602,7 +622,7 @@ crossorigin="anonymous"
                                                                  class="discount-logo position-absolute top-0 start-0   rounded-end-2 fs-6 p-1 shadow-sm"
                                                                 >-19%</span
                                                                >
-                                                               <div class="series-title position-relative bottom-0 align-item-center start-0 end-0 bg-white  text-dark text-center mt-5 "
+                                                               <div class="series-title position-relative bottom-0 align-item-center start-0 end-0 bg-white  text-dark text-center mt-3 "
                                                                >
                                                                 <div class="product-title">Microphone RODE NT2-A</div>
                                                                <div class=" position-relative pb-2 fs-5 fw-bolder">9,400,000đ</div>
@@ -611,8 +631,8 @@ crossorigin="anonymous"
                                                            </article>   
                                                            </div>
                                 </div>
-                                <div class=" product-below-6  col-6  col-sm-4 col-md-2 col-lg-2  ">
-                               <div class="p-2">
+                                <div class=" product-below-6  col-6  col-sm-4 col-md-4 col-lg-2  ">
+                               <div class="pt-2 ps-4 pe-4 pb-1">
                                                          <article class="series position-relative">
                                                            <a href="" class="series-link d-block text-decoration-none">
                                                              <img
@@ -623,7 +643,7 @@ crossorigin="anonymous"
                                                                  class="discount-logo position-absolute top-0 start-0   rounded-end-2 fs-6 p-1 shadow-sm"
                                                                  >-33%</span
                                                                >
-                                                               <div class="series-title position-relative bottom-0 align-item-center start-0 end-0 bg-white  text-dark text-center mt-5 "
+                                                               <div class="series-title position-relative bottom-0 align-item-center start-0 end-0 bg-white  text-dark text-center mt-3 "
                                                                >
                                                                <div class="product-title">Cherub Tuner WST-905Li</div>
                                                              <div class=" position-relative pb-2 fs-5 fw-bolder ">350,000đ</div>
@@ -658,8 +678,8 @@ crossorigin="anonymous"
 
                           <div class="container">
         <div class="row">
-          <div class="col-12 p-2">
-            <div class="News m-4 text-center" >
+          <div class="col-12 " style="background-color: #f4f4f7;">
+            <div class="News m-4 text-center"  >
               <a class="text-decoration-none" href=""> <h3> Tin Tức </h3> </a> 
               <div class="d-flex justify-content-center pt-2" >
                 <div style="width:100px ; border-top: 1px solid black; ">
@@ -670,12 +690,12 @@ crossorigin="anonymous"
         </div>
 </div> 
 
-<div class="container-fluid">
+<div class="container-fluid g-0 p-0">
  <div class="wrapper-home-banner-servce col-12">
 <div class="container px-0 m-0">
-<div class="row g-2 flex_content   justify-content-center d-flex justify-content-between">
+<div class="row g-0 p-0 flex_content   justify-content-center d-flex justify-content-between">
 
-        <div class="card-news col-6 col-sm-6 col-md-4 col-lg-3 position-relative">
+        <div class="card-news col-6 col-sm-6 col-md-4 col-lg-3 position-relative ">
           <div class="img-news">
             <a href="" class="news-img-wrapper mb-4"><img src="./images/News/News1.png" class="d-block w-100" alt="..."></a>
             <h5 class="card-title-news position-absolute text-center">4/5</h5>

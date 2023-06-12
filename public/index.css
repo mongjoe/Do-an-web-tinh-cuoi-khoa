@@ -1,18 +1,24 @@
 /* nav bar */
 .nav-item .nav-link,
 .navbar-nav .nav-item,
-.collapse navbar-collapse .nav{
-  font-family: 'Roboto Flex';
+.collapse navbar-collapse .nav {
+  font-family: "Roboto Flex";
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.6px;
   line-height: 21px;
   text-transform: uppercase;
-
-
 }
-.dropdown-menu .dropdown-item{
-   font-family: 'Roboto Flex';
+.navbar-part {
+  margin-left: 100px;
+  justify-content: center;
+  padding-left: 40px;
+  margin-right: auto;
+  
+}
+
+.dropdown-menu .dropdown-item {
+  font-family: "Roboto Flex";
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.6px;
@@ -20,10 +26,9 @@
   text-transform: uppercase;
 }
 
-
 .my-input-form {
   appearance: none;
-  
+
   border-bottom: 1px solid black;
   outline: none;
   background-color: transparent;
@@ -31,12 +36,11 @@
 }
 
 .search-button {
-  border-top: hidden;
-  border-left: hidden;
-  border-right: hidden;
+  border: hidden;
+  opacity: 3.0;
   color: black;
   background-color: transparent;
-  border-bottom: 1px solid black;
+
   outline: none;
   appearance: none;
 }
@@ -58,6 +62,7 @@
 }
 /* responsive carousel 1 */
 /* medium and up screens */
+
 @media (min-width: 768px) {
   .carousel-inner .carousel-item-end.active,
   .carousel-inner .carousel-item-next {
@@ -69,152 +74,175 @@
     transform: translateX(-25%);
   }
 
-
-.carousel-inner .carousel-item-end,
-.carousel-inner .carousel-item-start {
-  transform: translateX(0);
-} }
-
+  .carousel-inner .carousel-item-end,
+  .carousel-inner .carousel-item-start {
+    transform: translateX(0);
+  }
+}
+/* màn nhỏ */
 @media (max-width: 767px) {
   .slider-inside .slider-group > div {
     display: none;
-
-
   }
-  .navbar-toggler{
-    margin-right:0px;
-  }
- 
 
-  .my-input-form{
-    width:360px;
+  .navbar-toggler {
+    /* position: absolute; */
+    margin-bottom: 8px;
   }
-   .slider-group {
+  .image-parent {
+    margin-bottom: 40px;
+  }
+  .Right-object {
+    order: 2;
+    float: left;
+    position: absolute;
+    margin-left: 380px;
+    padding-bottom: 8px;
+  }
+
+  .navbar-toggler {
+    margin-right: 500px;
+  }
+
+  .my-input-form {
+    width: 300px;
+  }
+  .navbar-part {
+    margin-left: 8px;
+  }
+  .slider-group {
     flex: 0 0 0;
   }
 
   .card .img-wrapper {
     height: 30em;
-    
   }
-  
+
   .slider-inside .slider-group > div:first-child {
     display: block;
   }
-}
 
+  .navbar-small {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .card-news {
+    flex: 0 0 calc(100% / 2);
+  }
+  .navbar-items {
+    padding: 0px;
+  }
+  .user {
+    padding: 0px;
+  }
+  .cart {
+    padding-left: 4px;
+  }
+  .search-button {
+    padding-right: 0px;
+  }
+  .slider-group:hover .img-wrapper {
+    filter: opacity(0.9);
+  }
+
+  .card {
+    margin: 0 0.5em;
+
+    border: none;
+  }
+  .desc,
+  .card-title {
+    font-size: 16px;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .second-caro-prev,
+  .second-caro-next {
+    border-color: 1px solid black;
+    background-color: #e1e1e1;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .second-caro-prev:hover .carousel-control-prev-icon,
+  .second-caro-next:hover .carousel-control-next-icon {
+    font-size: 16px;
+
+    border-radius: 50%;
+    top: 50%;
+
+    background-color: black;
+  }
+  .second-caro-prev:hover,
+  .second-caro-next:hover {
+    background-color: black;
+  }
+
+  .slider-inside .slider-group.active,
+  .slider-inside .second-caro-next,
+  .slider-inside .second-caro-prev {
+    display: flex;
+  }
+}
 
 .my-prev,
 .my-next {
   display: none;
 }
 
-
 /* Featured products */
 
 /* responsive carousel 2 */
 
 /* màn hình lớn */
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
   .slider-group {
     margin-right: 0px;
     flex: 0 0 calc(100% / 4);
     display: block;
-    border:none;
+    border: none;
   }
   .slider-inside {
     display: flex;
   }
 
-.card .img-wrapper {
-  max-width: 100%;
-  height: 20em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.card img {
-  /* max-height: 100%; */
-  max-width: 100%;
-  height: auto;
-}
-.card {
-
-  border: none;
-}
-.second-caro-prev,
-.second-caro-next {
-  border-color: 1px solid black;
-  background-color: #e1e1e1;
-  width: 5vh;
-  height: 5vh;
-  border-radius: 50%;
-  top: 50%;
-  transform: translateY(-50%);
-}
+  .card .img-wrapper {
+    max-width: 100%;
+    height: 20em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card img {
+    /* max-height: 100%; */
+    max-width: 100%;
+    height: auto;
+  }
+  .card {
+    border: none;
+  }
+  .second-caro-prev,
+  .second-caro-next {
+    border-color: 1px solid black;
+    background-color: #e1e1e1;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 
 /* màn hình nhỏ */
 @media (max-width: 767px) {
- 
-
-.user{
-padding:0px;
 }
-.cart{
-padding-left:4px;
-}
-.search-button{
-  padding-right: 0px;
-}
-.slider-group:hover .img-wrapper {
-  filter: opacity(0.9);
-}
-
-.card {
-  margin: 0 0.5em;
-
-  border: none;
-}
-.desc,
-.card-title {
-  font-size: 16px;
-}
-.card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.second-caro-prev,
-.second-caro-next {
-  border-color: 1px solid black;
-  background-color: #e1e1e1;
-  width: 5vh;
-  height: 5vh;
-  border-radius: 50%;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.second-caro-prev:hover .carousel-control-prev-icon,
-.second-caro-next:hover .carousel-control-next-icon {
-  font-size: 16px;
-
-  border-radius: 50%;
-  top: 50%;
-
-  background-color: black;
-}
-.second-caro-prev:hover,
-.second-caro-next:hover {
-  background-color: black;
-}
-
-.slider-inside .slider-group.active,
-.slider-inside .second-caro-next,
-.slider-inside .second-caro-prev {
-  display: flex;
-} }
 
 /* service product */
 
@@ -426,4 +454,9 @@ h3 {
 
 #scrollToTopBtn:hover {
   background-color: #bfbfbf; /* Màu nền của nút khi hover */
+}
+
+.modal-header {
+  justify-content: center;
+  padding-left: 200px;
 }

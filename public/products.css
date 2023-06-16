@@ -101,11 +101,7 @@ border-left : 1px splid #bbb;
 
   .product-part{
 
-<<<<<<< HEAD
   /* box-shadow: 0 0 6px rgba(0, 0, 0, 0.2); */
-=======
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
->>>>>>> 2bd0d8f07593ee0fcc72b83e1f1c94bc7e7fb0b5
 
   background-color: white;
 }
@@ -160,7 +156,6 @@ border-left : 1px splid #bbb;
   margin-bottom: 10px;
   font-weight: 500;
 }
-<<<<<<< HEAD
 
 
 .accordion-body:focus,
@@ -197,5 +192,3 @@ background-color: white;
 
 
 
-=======
->>>>>>> 2bd0d8f07593ee0fcc72b83e1f1c94bc7e7fb0b5

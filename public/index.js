@@ -1,49 +1,51 @@
-var multipleCardCarousel = $("#carouselExampleControls");
+var multipleCardCarousel = document.querySelector("#carouselExampleControls");
+
 if (window.matchMedia("(min-width: 768px)").matches) {
-  var carousel = new bootstrap.Carousel(multipleCardCarousel[0], {});
-  var carouselWidth = $(".slider-inside")[0].scrollWidth;
-  var cardWidth = $(".slider-group").width();
+  var carousel = new bootstrap.Carousel(multipleCardCarousel, {});
+  var carouselWidth = document.querySelector(".slider-inside").scrollWidth;
+  var cardWidth = document.querySelector(".slider-group").offsetWidth;
   var scrollPosition = 0;
 
   function nextSlide() {
     if (scrollPosition < carouselWidth - cardWidth * 4) {
       scrollPosition += cardWidth;
-      $("#carouselExampleControls .slider-inside").animate(
-        { scrollLeft: scrollPosition },
-        600
-      );
+      document.querySelector(
+        "#carouselExampleControls .slider-inside"
+      ).scrollLeft = scrollPosition;
     } else {
       // Nếu đến ảnh cuối cùng, trở về ảnh đầu tiên
       scrollPosition = 0;
-      $("#carouselExampleControls .slider-inside").animate(
-        { scrollLeft: scrollPosition },
-        600
-      );
+      document.querySelector(
+        "#carouselExampleControls .slider-inside"
+      ).scrollLeft = scrollPosition;
     }
   }
-  $("#carouselExampleControls .carousel-control-next").on("click", nextSlide);
 
-  $("#carouselExampleControls .carousel-control-prev").on("click", function () {
-    if (scrollPosition > 0) {
-      scrollPosition -= cardWidth;
-      $("#carouselExampleControls .slider-inside").animate(
-        { scrollLeft: scrollPosition },
-        600
-      );
-    } else {
-      // Nếu ở ảnh đầu tiên, trở về ảnh cuối cùng
-      scrollPosition = carouselWidth - cardWidth * 4;
-      $("#carouselExampleControls .slider-inside").animate(
-        { scrollLeft: scrollPosition },
-        600
-      );
-    }
-  });
-// setInterval(nextSlide, 6000); // Slide tự động chạy sau mỗi 3 giây
+  document
+    .querySelector("#carouselExampleControls .carousel-control-next")
+    .addEventListener("click", nextSlide);
+
+  document
+    .querySelector("#carouselExampleControls .carousel-control-prev")
+    .addEventListener("click", function () {
+      if (scrollPosition > 0) {
+        scrollPosition -= cardWidth;
+        document.querySelector(
+          "#carouselExampleControls .slider-inside"
+        ).scrollLeft = scrollPosition;
+      } else {
+        // Nếu ở ảnh đầu tiên, trở về ảnh cuối cùng
+        scrollPosition = carouselWidth - cardWidth * 4;
+        document.querySelector(
+          "#carouselExampleControls .slider-inside"
+        ).scrollLeft = scrollPosition;
+      }
+    });
+
+  // setInterval(nextSlide, 6000); // Slide tự động chạy sau mỗi 3 giây
 } else {
-  multipleCardCarousel.addClass("slide");
+  multipleCardCarousel.classList.add("slide");
 }
-
 
 function scrollToTop() {
   window.scrollTo({
@@ -86,9 +88,5 @@ document.querySelector(".user").addEventListener("click", function () {
   var modal = document.querySelector("#registerModal");
   modal.classList.add("animate__animated", "animate__zoomIn");
 });
-
-
-
-
 
 //

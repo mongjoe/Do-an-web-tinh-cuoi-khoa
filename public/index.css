@@ -1,979 +1,562 @@
+/* nav bar */
+.nav-item .nav-link,
+.navbar-nav .nav-item,
+.collapse navbar-collapse .nav {
+  font-family: "Roboto Flex";
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
 
-<!DOCTYPE html>
-<html lang="en">
-  <head> 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Guitar House</title> 
-    
+.navbar-part {
+  margin-left: 100px;
+  justify-content: center;
+  padding-left: 40px;
+  margin-right: auto;
+ 
+  margin-top: 5px;
+}
 
-    <link href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,700&display=swap" rel="stylesheet">
-    
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-    />
+.dropdown-menu .dropdown-item {
+  font-family: "Roboto Flex";
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+.form-control:focus {
+  box-shadow:none;
+  border-color: black;
+}
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+.my-input-form {
+  appearance: none;
 
-<link
-href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-rel="stylesheet"
-integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-crossorigin="anonymous"
-/>
-<link href="https://fonts.cdnfonts.com/css/helvetica-2" rel="stylesheet">
-<link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-  
-    
-    <link rel="stylesheet" href="index.css"/>
-    
+  border-bottom: 1px solid black;
+  outline: none;
+  background-color: transparent;
+  width: 140px;
+  border-radius: 0%;
+  border-top: none;
+  border-left:none;
+  border-right:none;
+  padding-bottom: 2px;
+  padding-left: 2px;
+}
 
+.search-button {
+  border: hidden;
+  opacity: 3;
+  color: black;
+  background-color: transparent;
 
+  outline: none;
+  appearance: none;
+}
 
-  
+.user {
+  border: hidden;
+  color: black;
+  background-color: transparent;
+  outline: none;
+  appearance: none;
+}
 
-</head>
-  <body>
-    <main class="main">
-<div class="container">
-           <div class="container-header p-0 g-0 mb-1">
-        <div class="g-0">
-          <!-- <div class="col-12"> -->
-            <section class="section section-movies p-0">
-              <div class="section-header align-item-center">
-                <div class="image-parent  p-0 position-relative d-flex bg-white align-item-center justify-content-center ">
-                    <div class="icon pt-2 bg-white ">
-                    <a href="./index.html"> 
-                    <img src="./images/logo.png" 
-                    width="100" height=100">
-                    </a>
-                    </div>
-                    </div>
-                    <div>
-                <nav class="navbar navbar-expand-lg bg-white text-dark pt-0 pb-0 g-0">
-                  <div class="container-fluid d-flex position-relative navbar-small align-item-center m-0 p-0">
+.cart {
+  border: hidden;
+  color: black;
+  background-color: transparent;
+  outline: none;
+  appearance: none;
+}
+/* responsive carousel 1 */
+/* medium and up screens */
 
-                    
-                    
-       <button class="navbar-toggler ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-         <span class="navbar-toggler-icon"></span>
-       </button>
-       <div class="collapse navbar-collapse position-relative navbar-part " id="navbarNavDropdown">
-         <ul
-                     class="navbar-items nav nav-underline align-items-baseline"
-                     id="myTab"
-                     role="tablist"
-                   >
-         <ul class="navbar-nav fw-bold h6 d-flex p-0">
-            <li class="nav-item p-0">
-             <a class="nav-link" href="./index.html">Trang Chủ</a>
-           </li>
+/* màn lớn */
+@media (min-width: 768px) {
+  .carousel-inner .carousel-item-end.active,
+  .carousel-inner .carousel-item-next {
+    transform: translateX(25%);
+  }
+  /* .navbar:hover .navbar-toggler {
+    display: none;
+  } */
+  .product-price-news {
+    font-size: 20px;
+  }
 
-           <li class="nav-item dropdown ps-2">
-             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-               Sản Phẩm
-             </a>
-             <ul class="dropdown-menu ps-2">
-               <li><a class="dropdown-item " href="#">Guitar</a></li>
-               <li><a class="dropdown-item" href="#">Amplifier</a></li>
-               <li><a class="dropdown-item" hoppôp90o0o0o-rty90-09863ư234567uy6t54rt67890-09876543`1234567898765321`    23456ytrewq121`1211`11``123ưaz  qaqz  `       href="#">Dây Đàn</a></li>
-               <li><a class="dropdown-item ps-2" href="#">Pedal   & Phụ Kiện</a></li>
-               <li><a class="dropdown-item" href="#">Pickup & EQ</a></li>
-               <li><a class="dropdown-item" href="#">Phụ Kiện Đàn</a></li>
-               <li><a class="dropdown-item" href="#">Thiêt Bị Âm Thanh & Phòng Thu</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown ps-2">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-             Thương Hiệu
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Taylor</a></li>
-                <li><a class="dropdown-item" href="#">Martin</a></li>
-                <li><a class="dropdown-item" href="#">Yamaha</a></li>
-                <li><a class="dropdown-item" href="#">Cort</a></li>
-                <li><a class="dropdown-item" href="#">Takamine</a></li>
-                <li><a class="dropdown-item" href="#">Elixir</a></li>
-                <li><a class="dropdown-item" href="#">D'addario</a></li>            
-              </ul>
-            </li>
-             <li class="nav-item ps-2">
-              <a class="nav-link" href="./News.html">Blog</a>
-            </li>
-            <li class="nav-item ps-2">
-              <a class="nav-link" href="./intro.html">Giới Thiệu</a>
-            </li>
-            <li class="nav-item ps-2">
-              <a class="nav-link" href="#">Liên Hệ</a>
-            </li>
-          </ul>
-        </ul>
-      </div>
+  .card-news {
+    width: 24%;
+    height: auto;
+    border: 1px solid #eeee;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+  }
+  /* backtotop */
+  #scrollToTopBtn {
+    display: none; /* Mặc định ẩn nút */
+    position: fixed; /* Vị trí cố định */
+    bottom: 100px; /* Khoảng cách từ nút đến bottom */
+    right: 20px; /* Khoảng cách từ nút đến right */
+    width: 40px; /* Chiều rộng của nút */
+    height: 40px; /* Chiều cao của nút */
+    background-color: #f2f3f5; /* Màu nền của nút */
+    color: #292929; /* Màu chữ của nút */
+    border: none; /* Không có viền */
+    border-radius: 50%; /* Bo góc tròn */
+    font-size: 20px; /* Kích thước chữ */
+    text-align: center; /* Căn giữa nội dung */
+    justify-content: center;
+    cursor: pointer; /* Chỉ tay khi di chuột vào */
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  }
+  /* .dropdown-menu .li:hover,
+  .nav-underline .nav-link:focus
+ {
+    border-bottom: 2px solid #800;
+  } */
+
+  /* .nav-underline .nav-link:hover,
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  } */
+
+  .second-caro-prev {
+    transform: translateX(-25%);
+  }
+
+  .second-caro-next {
+    transform: translateX(25%);
+  }
+
+  .carousel-control-prev-icon {
+    background-image: url(./images/arrow-left-short.svg);
+  }
+  .carousel-control-next-icon {
+    background-image: url(./images/arrow-right-short.svg);
+  }
+
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    display: inline-block;
+    width: 2.7rem;
+    height: 2.7rem;
+    padding: none;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100% 100%;
+
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+  }
+
+  .slider-group {
+    margin-right: 0px;
+    flex: 0 0 calc(100% / 4);
+    display: block;
+    border: none;
+  }
+  .slider-inside {
+    display: flex;
+  }
+
+  .card .img-wrapper {
+    max-width: 100%;
+    height: 20em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card img {
+    /* max-height: 100%; */
+    max-width: 100%;
+    height: auto;
+  }
+  .card {
+    border: none;
+  }
+}
+
+/* màn nhỏ */
+@media (max-width: 767px) {
+  .slider-inside .slider-group > div {
+    display: none;
+  }
+
+  .product-price-news {
+    font-size: 14px;
+  }
+
+  .carousel-control-prev-icon {
+    background-image: url(./images/arrow-left-short.svg);
+  }
+  .carousel-control-next-icon {
+    background-image: url(./images/arrow-right-short.svg);
+  }
+
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    display: inline-block;
+    width: 2.7rem;
+    height: 2.2rem;
+    padding: none;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100% 100%;
+
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+  }
+
+  /* backtotop */
+  #scrollToTopBtn {
+    display: none; /* Mặc định ẩn nút */
+    position: fixed; /* Vị trí cố định */
+    bottom: 130px; /* Khoảng cách từ nút đến bottom */
+    right: 20px; /* Khoảng cách từ nút đến right */
+    width: 40px; /* Chiều rộng của nút */
+    height: 40px; /* Chiều cao của nút */
+    background-color: #f2f3f5; /* Màu nền của nút */
+    color: #292929; /* Màu chữ của nút */
+    border: none; /* Không có viền */
+    border-radius: 50%; /* Bo góc tròn */
+    font-size: 20px; /* Kích thước chữ */
+    text-align: center; /* Căn giữa nội dung */
+    justify-content: center;
+    cursor: pointer; /* Chỉ tay khi di chuột vào */
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .card-footer {
+    padding-left: 25px;
+    padding-right: 10px;
+  }
+  .carousel-control-prev-icon {
+    transform: translateX(0%);
+  }
+  .navbar-toggler {
+    /* position: absolute; */
+    margin-bottom: 8px;
+  }
+  .image-parent {
+    margin-bottom: 40px;
+  }
+  .Right-object {
+    order: 2;
+    float: left;
+    position: absolute;
+    margin-left: 380px;
+    padding-bottom: 8px;
+  }
+
+  .navbar-toggler {
+    margin-right: 500px;
+  }
+
+  /* .my-input-form {
+    width: 300px;
+  } */
+  .navbar-part {
+    margin-left: 8px;
+  }
+  .slider-group {
+    flex: 0 0 0;
+  }
+
+  .card .img-wrapper {
+    height: 30em;
+  }
+
+  .slider-inside .slider-group > div:first-child {
+    display: block;
+  }
+
+  .navbar-small {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .card-news {
       
-      <div class="Right-object fluid me-5 d-flex  position-relative justify-content-center align-items-center">
-
-        <div class="d-flex position-relative justify-content-center align-items-center">      
-        <div class="d-flex"    >
-
-        
-          <button class="search-button position-relative pt-1" type="submit"> <img src="./images/search.png" style="width: 28px ; height: 28px;" >
-          </button>
-          
-         
-         <!-- modal đăng nhập -->
-<div class="position-relative">
-
-<!-- Button mở form đăng nhập -->
-  <button type="button" class=" btn border-0 p-0 position-relative
-  " data-bs-toggle="modal" data-bs-target="#loginModal">
-    <img src="./images/user.png" style="height: 28px ; width:28px" class="modal-user-image position-relative">
-  </button>
-
-  <!-- Modal đăng nhập -->
-  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header ps-0" >
-          <h5 class="modal-title" style="padding-left:190px;" id="registerModalLabel">ĐĂNG NHẬP</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <!-- Form đăng nhập -->
-          <form>
-            <div class="mb-3">
-              <label for="loginUsername" class="form-label">Tên đăng nhập</label>
-              <input type="text" class="form-control" id="loginUsername" placeholder="Nhập tên đăng nhập">
-            </div>
-            <div class="mb-3">
-              <label for="loginPassword" class="form-label">Mật khẩu</label>
-              <input type="password" class="form-control" id="loginPassword" placeholder="Nhập mật khẩu">
-            </div>
-
-            <div class="sign col-4 d-flex mt-3 align-items-center position-relative justify-content-center w-100">
-            
-              <div class="row justify-content-center w-100 ">
-
-            <button type="submit" class="btn btn-dark position-relative">Đăng nhập</button>
-
-
-            <p class="m-0 pt-2" style="padding-left:165px; color:gray; font-size: 12px;">
-          Bạn chưa có tài khoản? </p>
-
-
-
-<button type="button" class="btn btn-subtle-secondary border-0 fs-8" data-bs-toggle="modal" data-bs-target="#registerModal" style="text-decoration:underline; ">
-    Tạo tài khoản
-  </button>
-              </div>
-            </div>
-          </form>
-   </div>
-    </div>
-  </div>
-            </div>
-
-            <!-- Modal đăng ký -->
-    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header" >
-            <h5 class="modal-title" id="registerModalLabel">ĐĂNG KÝ</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <!-- Form đăng ký -->
-            <form>
-              <div class="mb-3">
-                <label for="registerUsername" class="form-label">Tên đăng nhập</label>
-                <input type="text" class="form-control" id="registerUsername" placeholder="Nhập tên đăng nhập ">
-              </div>
-              <div class="mb-3">
-                <label for="registerPassword" class="form-label">Mật khẩu</label>
-                <input type="password" class="form-control" id="registerPassword" placeholder="Nhập mật khẩu (gồm 8 chữ số)">
-              </div>
-              <div class="mb-3">
-                <label for="comfirmPassword" class="form-label">Nhập lại mật khẩu</label>
-                <input type="password" class="form-control" id="comfirmPassword" placeholder="Nhập lại mật khẩu">
-              </div>
-              <div class="mb-3">
-                <label for="registerEmail" class="form-label">E-mail</label>
-                <input type="text" class="form-control" id="registerEmail" placeholder="Nhập E-mail">
-              </div>
-              <div class="sign-2 col-4 d-flex mt-3 align-items-center position-relative justify-content-center w-100">
-                <div class="row justify-content-center w-100 ">
-  
-              <button type="submit" class="btn btn-dark w-100">Đăng ký</button>
-              <p class="m-0 pt-2" style="padding-left:175px; color:gray; font-size:12px">
-            Bạn đã có tài khoản? </p>
-
-  <button type="button" class="btn border-0" data-bs-toggle="modal" data-bs-target="#loginModal" style="text-decoration: underline;">Đăng nhập</button>
-
-               
-                </div>
-  
-  
-              
-            </form>
-          </div>
-          </div>
-        </div>
-      </div>
-
-</div>
-
-
-
-      
-    <button class="cart position-relative p-0" >
-    <img src="./images/cart.png" style="height: 28px ; width:28px"> </style> 
-  </button>
-
-        </div>
-  </div>
-</div>
-                  </div>
-                </nav>
-                    </div>
-              </div>
-            </section></div>
-           </div>
-</div>
-
-<div class="container-fluid align-item-center ps-0 pe-0">
-    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-
-
-  
-
-
-  </div>
-
-
-
-    
-
-
-
-
-
-
-
-
-<div>
-<div class="container-fluid align-item-center position-relative  ps-0 pe-0 z-3">
-    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-
-  <div class="carousel-inner">
-    <div class="carousel-item active" data-bs-interval="4000" >
-      <img src="./images/Ảnh-1.png" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item " data-bs-interval="4000">
-      <img src="./images/Ảnh-2.png" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item" data-bs-interval="4000">
-      <img src="./images/Ảnh-3.png" class="d-block w-100" alt="...">
-    </div>
-
-  </div>
-
-  <button class="my-prev carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="my-next carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-
-</div>
-           </div>
-
-<div class="container">
-        <div class="row">
-          <div class="col-12 p-2">
-            <div class="FeaturedProducts m-4 text-center" >
-              <a class="text-decoration-none" href="./Products.html"> <h3> Sản Phẩm Nổi Bật </h3> </a> 
-              <div class="d-flex justify-content-center pt-2" >
-                <div style="width:100px ; border-top: 1px solid black; ">
-                </div>
-              </div> 
-            </div>
-
-            
-            <div class="row mx-auto my-auto justify-content-center align-item-center">
-
-  <div id="carouselExampleControls" class="carousel" data-bs-ride="carousel">
-    <div class="carousel-inner slider-inside border-0">
-
-      
-        <div class="carousel-item active border-0 slider-group col-12 col-sm-6 col-md-4 col-lg-3  justify-content-center position-relative">
- 
-
-                        <div> <a href="./ProductDetail.html" class="card text-decoration-none">
-
-                <div class="  img-wrapper mt-4 mb-4 "><img src="./images/FeaturedProducts/Acoustic.jpg" class="d-block w-100" alt="..."> </div>
-                <div class="card-body  position-relative">
-                    <h5 class=" card-title text-center">Acoustic Guitar</h5>
-                    <p class="product-price fs-5 fw-bolder text-center">10,800,000đ</p>
-                 </div>
-                 </a>
-            </div>
-        </div>
-        <div class="carousel-item  border-0 slider-group col-12 col-sm-6 col-md-4 col-lg-3  justify-content-center position-relative">
- 
-
-                        <div> <a href="./ProductDetail.html" class="card text-decoration-none">
-
-                <div class="  img-wrapper mt-4 mb-4"><img src="./images/FeaturedProducts/electric.jpg" class=" d-block w-100" alt="..."> </div>
-                <div class="card-body  position-relative">
-                    <h5 class=" card-title text-center">Electric Guitar</h5>
-                    <p class="product-price fs-5 fw-bolder text-center">6,200,000đ</p>
-                 </div>
-                 </a>
-            </div>
-        </div>
-        <div class="carousel-item slider-group border-0 col-12 col-sm-6 col-md-4 col-lg-3   justify-content-center position-relative">
- 
-                        <div> <a href="./ProductDetail.html" class="card text-decoration-none">
-
-                <div class="  img-wrapper mt-4 mb-4"><img src="./images/FeaturedProducts/martin.png" class="d-block w-100" alt="..."> </div>
-                <div class="card-body  position-relative">
-                    <h5 class=" card-title text-center">Acoustic Martin D10E-02</h5>
-                    <p class="product-price fs-5 fw-bolder text-center">4,400,000đ</p>
-                 </div>
-                 </a>
-            </div>
-        </div>
-        <div class="carousel-item border-0 slider-group col-12 col-sm-6 col-md-4 col-lg-3   justify-content-center position-relative">
- 
-                        <div> <a href="./ProductDetail.html" class="card text-decoration-none">
-
-                <div class="  img-wrapper  mt-4 mb-4"><img src="./images/FeaturedProducts/Classic.png" class="d-block w-100" alt="..."> </div>
-                <div class="card-body  position-relative">
-                    <h5 class=" card-title text-center">Classic Guitar</h5>
-                    <p class="product-price fs-5 fw-bolder text-center">3,500,000đ</p>
-                 </div>
-                 </a>
-            </div>
-        </div>
-        <div class="carousel-item border-0 slider-group  col-12 col-sm-6 col-md-4 col-lg-3   justify-content-center position-relative">
-                        <div> <a href="./ProductDetail.html" class="card text-decoration-none">
-
-                <div class="  img-wrapper  mt-4 mb-4"><img src="./images/FeaturedProducts/taylor.png" class="d-block w-100" alt="..."> </div>
-                <div class="card-body  position-relative">
-                    <h5 class=" card-title text-center">Acoustic Taylor 110E</h5>
-                    <p class="product-price fs-5 fw-bolder text-center">20,000đ</p>
-                 </div>
-                 </a>
-            </div>
-        </div>
-        <div class="carousel-item slider-group border-0 col-12 col-sm-6 col-md-4 col-lg-3  justify-content-center position-relative">
-            <div> <a href="./ProductDetail.html" class="card text-decoration-none">
-                <div class="  img-wrapper  mt-4 mb-4"><img src="./images/FeaturedProducts/Pickup Fishman.png" class=" d-block w-100" alt="..."> </div>
-                <div class="card-body  position-relative">
-                    <h5 class=" card-title text-center">Pickup Fishman</h5>
-                    <p class="product-price fs-5 fw-bolder text-center">1,00,000đ</p>
-                 </div>
-                 </a>
-            </div>
-        </div>
-        <div class="carousel-item slider-group  border-0 col-12 col-sm-6 col-md-4 col-lg-3  justify-content-center position-relative">
-                        <div> <a href="./ProductDetail.html" class="card text-decoration-none">
-
-                <div class="  img-wrapper mt-4 mb-4"><img src="./images/FeaturedProducts/cajon.png" class="d-block w-100" alt="..."> </div>
-                <div class="card-body  position-relative">
-                    <h5 class=" card-title text-center">Cajon</h5>
-
-                  
-                    <p class="product-price fs-5 fw-bolder  text-center">2,00,000đ</p>
-
-                    </div>
-                  </a>
-            </div>
-        </div>
-    </div>
-    <button class="second-caro-prev  carousel-control-prev " type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="second-caro-next  carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
-   
-
-  </div>
-
-</div>
-</div>
-</div>
-</div>
-
-
-<!-- banner service -->
-<div>
-<div class="wrapper-home-banner-servce justify-content-center d-flex col-12 mt-4">
-<div class="container px-0 m-0">
-<div class="row g-0 flex_content p-0 m-0  justify-content-center d-flex justify-content-between">
-
-<div class="services-box-1 position-relative d-flex justify-content-center col-6 col-sm-6 col-md-3 col-lg-3  text-center p-0 m-0 ">
-<div class="services-banner">
- <div class="img-outer">
-
-<div class="service-img ">
-<img data-src="//theme.hstatic.net/200000388065/1000766714/14/vice_item_1.png?v=111" src="//theme.hstatic.net/200000388065/1000766714/14/vice_item_1.png?v=111" alt="Giao hàng miễn phí" class=" my-img ls-is-cached lazyloaded">
-</div>
-
- </div>
-
- <div class="text justify-content-center text-center mt-4"> 
-<div class="title">Giao hàng miễn phí</div>
-<div class="desc mt-2 position-relative">với đơn hàng từ 500k trở lên</div>
- </div>
-</div>
-
-</div>
-
-<div class="services-box-2 position-relative m-0 p-0 justify-content-center align-item-center text-center col-6 col-sm-6 col-md-3 col-lg-3  ">
-<div class="services-banner">
-
-<div class="img-outer">
-<div class="service-img ">
-<img data-src="//theme.hstatic.net/200000388065/1000766714/14/vice_item_2.png?v=111" src="//theme.hstatic.net/200000388065/1000766714/14/vice_item_2.png?v=111" alt="Hỗ trợ 24/7" class=" my-img ls-is-cached lazyloaded">
-</div>
-</div>
-<div class="text justify-content-center mt-4">
-<div class="title">Hỗ trợ 24/7</div>
-<div class="desc mt-2 position-relative">Hỗ trợ online / offline 24/7</div>
-</div>
-</div>
-</div>
-
-<div class="services-box-2 position-relative m-0 p-0 justify-content-center align-item-center text-center col-6 col-sm-6 col-md-3 col-lg-3  ">
-<div class="services-banner">
-
-<div class="img-outer">
-<div class="service-img">
-<img data-src="//theme.hstatic.net/200000388065/1000766714/14/vice_item_3.png?v=111" src="//theme.hstatic.net/200000388065/1000766714/14/vice_item_3.png?v=111" alt="Miễn phí đổi trả" class="  my-img ls-is-cached lazyloaded">
-</div>
-</div>
-<div class="text justify-content-center mt-4">
-<div class="title">Miễn phí đổi trả</div>
-<div class="desc mt-2 position-relative ">Trong vòng 7 ngày</div>
-</div>
-</div>
-</div>
-<div class="services-box-3 position-relative m-0 p-0 justify-content-center align-item-center text-center col-6 col-sm-6 col-md-3 col-lg-3  ">
-<div class="services-banner">
-
-<div class="img-outer">
-<div class="service-img  ">
-<img data-src="//theme.hstatic.net/200000388065/1000766714/14/vice_item_4.png?v=111" src="//theme.hstatic.net/200000388065/1000766714/14/vice_item_4.png?v=111" alt="Đặt hàng trực tuyến" class=" my-img ls-is-cached lazyloaded">
-</div>
-</div>
-
-<div class="text justify-content-center mt-4">
-<div class="title">Đặt hàng trực tuyến</div>
-<div class="desc mt-2 position-relative ">Hotline: 0963088701</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-<div class="col-12 ">
-<div class="container ./ `  px-0 m-0">
-<div class="row g-0 flex_content  justify-content-center d-flex justify-content-between">
-
-<!-- <div class="container px-0 m-0"> -->
-<!-- <div class="row g-0 flex_content  justify-content-center d-flex justify-content-between"> -->
-<!-- <div class="container bg-light"> -->
-  <div class="container-fluid  p-0" style="background-color: #f4f4f7 ;">
-<div class="container p-0 ">
-                  
-
-
-                        <div class="best-seller p-4 text-center" >
-                           <a class="text-decoration-none" href="./Products.html"> <h3> Sản Phẩm Bán Chạy </h3> </a> 
-                          <div class="d-flex justify-content-center pt-2" >
-                            <div style="width:100px ; border-top: 1px solid black; ">
-                            </div>
-                          </div> 
-                        </div>
-
-
-                        <div class="section-content ">
-                          
-                              <div class="container p-0">
-                              <div class="row g-0">
-                                <div class="product-below-1 col-6 col-sm-4 col-md-4 col-lg-2 ">
-                               <div class="pt-2 ps-4 pe-4 pb-1">
-                                                         <article class="series position-relative">
-                                                           <a href="./productDetail.html" class="series-link d-block text-decoration-none">
-                                                             <img
-                                                               class=" ok-poster mw-100 mt-4"
-                                                               src="https://product.hstatic.net/200000388065/product/09abb2deb30f4e2187c1e222741e828c_fc1b5e94289c490cb0bf22fb7c4dc63d_large.jpeg"
-                                                               alt=""/>
-                                                               <span
-                                                                 class="discount-logo position-absolute top-0 start-0   rounded-end-2 fs-6 p-1 shadow-sm"
-                                                                 >-33%</span
-                                                               >
-                                                               <article class="series-title position-relative bottom-0 align-item-center start-0 end-0 bg-white  text-dark text-center mt-3  "
-                                                               >
-                                                                 <div class="product-title ">Dây Đàn Guitar Acoustic Elixir 16002 Acoustic 10-47 Phosphor Bronze Nanoweb</div>
-                                                                 <div class=" position-relative pb-2 fs-5 fw-bolder">380,000₫</div>
-                                                               </article>
-                                                              </a>
-                                                            </article>   
-                      
-                                                           </div>
-                                </div>
-
-                                <div class=" product-below-2 col-6 col-sm-4 col-md-4 col-lg-2  ">
-                               <div class="pt-2 ps-4 pe-4 pb-1">
-                                                         <article class="series position-relative">
-                                                           <a href="./productDetail.html" class="series-link d-block text-decoration-none">
-                                                             <img
-                                                               class=" ok-poster mw-100 mt-4"
-                                                               src="https://product.hstatic.net/200000388065/product/a27ed2ddecf54ab5a0ec200fcdf17cb3_c3aebad3af5a420983e85ec8e39f6556_large.jpg"
-                                                               alt=""/>
-                                                               <span
-                                                                 class="discount-logo position-absolute top-0 start-0   rounded-end-2 fs-6 p-1 shadow-sm"
-                                                                 >-19%</span
-                                                               >
-                                                               <article class="series-title osition-relative bottom-0 align-item-center start-0 end-0 bg-white  text-dark text-center mt-3 "
-                                                               >
-                                                                 <div class="product-title ">Dây Đàn Guitar Elixir 16027 Acoustic 11-52 Phosphor Nano</div>
-                                                                 <div class=" position-relative pb-2 fs-5 fw-bolder ">380,000đ</div>
-                                                               </article>
-                                                              </a>
-                                                            </article>   
-                      
-                                                           </div>
-                                </div>
-                      
-                                
-                      
-                                <div class=" product-below-2  col-6 col-sm-4 col-md-4 col-lg-2  ">
-                               <div class="pt-2 ps-4 pe-4 pb-1">
-                                                         <article class="series position-relative">
-                                                           <a href="./productDetail.html" class="series-link d-block text-decoration-none">
-                                                             <img
-                                                               class=" ok-poster mw-100 mt-4"
-                                                               src="https://product.hstatic.net/200000388065/product/a27ed2ddecf54ab5a0ec200fcdf17cb3_c3aebad3af5a420983e85ec8e39f6556_large.jpg"
-                                                               alt=""/>
-                                                               <span
-                                                                 class="discount-logo position-absolute top-0 start-0   rounded-end-2 fs-6 p-1 shadow-sm"
-                                                                 >-19%</span
-                                                               >
-                                                               <div class="series-title osition-relative bottom-0 align-item-center start-0 end-0 bg-white  text-dark text-center mt-3 "
-                                                               >
-                                                               <div class="product-title">Dây Đàn Guitar Elixir 16027 Acoustic 11-52 Phosphor Nano</div>
-                                                               <div class=" position-relative pb-2 fs-5 fw-bolder">380,000đ</div>
-                                                             </div>
-                                                             </a>
-                                                           </article>   
-                                                           </div>
-                                </div>
-                      
-                                <div class=" product-below-2  col-6 col-sm-4 col-md-4 col-lg-2  ">
-                               <div class="pt-2 ps-4 pe-4 pb-1">
-                                                         <article class="series position-relative">
-                                                           <a href="./productDetail.html" class="series-link d-block text-decoration-none">
-                                                             <img
-                                                               class=" ok-poster mw-100 mt-4"
-                                                               src="https://product.hstatic.net/200000388065/product/544de0b916f34725849411bd81a79c9e_cf0a88c87b32460889149f6afbf917da_large.jpg"
-                                                               alt=""/>
-                                                               <span
-                                                                 class="discount-logo position-absolute top-0 start-0   rounded-end-2 fs-6 p-1 shadow-sm"
-                                                                 >-26%</span
-                                                               >
-                                                               <div class="series-title osition-relative bottom-0 align-item-center start-0 end-0 bg-white  text-dark text-center mt-3 "
-                                                               >
-                                                               <div class="product-title">Dùi trống Vic Firth American Classic 7A</div>
-                                                               <div class=" position-relative pb-2 fs-5 fw-bolder">300,000đ</div>
-                                                             </div>
-                                                             </a>
-                                                           </article>   
-                                                           </div>
-                                </div>
-
-                                <div class=" product-below-2 col-6 col-sm-4 col-md-4 col-lg-2  ">
-                               <div class="pt-2 ps-4 pe-4 pb-1">
-                                                         <article class="series position-relative">
-                                                           <a href="./productDetail.html" class="series-link d-block text-decoration-none">
-                                                             <img
-                                                               class=" ok-poster mw-100 mt-4"
-                                                               src="https://product.hstatic.net/200000388065/product/fabfa26719544d6ca2965654a0fedb2e_8f6f9288d8ea4322b75e5035c2a5d79e_large.jpg"
-                                                               alt=""/>
-                                                               <span
-                                                                 class="discount-logo position-absolute top-0 start-0   rounded-end-2 fs-6 p-1 shadow-sm"
-                                                                 >-33%</span
-                                                               >
-                                                               <div class="series-title position-relative bottom-0 align-item-center start-0 end-0 bg-white  text-dark text-center mt-3 "
-                                                               >
-                                                               <div class="product-title">Fishman Prefix Pro Blend</div>
-                                                               <div class=" position-relative pb-2 fs-5 fw-bolder">8,000,000đ</div>
-                                                             </div>
-                                                             </a>
-                                                           </article>   
-                                                           </div>
-                                </div>
-
-                                 <div class="product-below-3  col-6 col-sm-4 col-md-4 col-lg-2  ">
-                               <div class="pt-2 ps-4 pe-4 pb-1">
-                                                         <article class="series position-relative">
-                                                           <a href="./productDetail.html" class="series-link d-block text-decoration-none">
-                                                             <img
-                                                               class=" ok-poster mw-100 mt-4"
-                                                               src="https://product.hstatic.net/200000388065/product/a_522d853e56fe498d98c45d10b75095cc_large.jpeg"
-                                                               alt=""/>
-                                                               <span
-                                                                 class="discount-logo position-absolute top-0 start-0   rounded-end-2 fs-6 p-1 shadow-sm"
-                                                                 >-26%</span
-                                                               >
-                                                               <div class="series-title position-relative bottom-0 align-item-center start-0 end-0 bg-white  text-dark text-center mt-3 "
-                                                               >
-                                                               <div class="product-title">GUITAR ĐIỆN FENDER SQUIER BULLET STRATOCASTER HSS FAT ARCTIC WHITE</div>
-                                                               <div class=" position-relative pb-2 fs-5 fw-bolder">5,500,000đ</div>
-                                                             </div>
-                                                             </a>
-                                                           </article>   
-                                                           </div>
-                                </div>
-
-                                 <div class="product-below-4  col-6 col-sm-4 col-md-4 col-lg-2  ">
-                               <div class="pt-2 ps-4 pe-4 pb-1">
-                                                         <article class="series position-relative">
-                                                           <a href="./productDetail.html" class="series-link d-block text-decoration-none">
-                                                             <img
-                                                               class=" ok-poster mw-100 mt-4"
-                                                               src="https://product.hstatic.net/200000388065/product/69a288e86c34454eadc8963e6cc3612b_27f14f69503b4c91b0a49d9d9a8940d0_large.jpeg"
-                                                               alt=""/>
-                                                               <span
-                                                                 class="discount-logo position-absolute top-0 start-0   rounded-end-2 fs-6 p-1 shadow-sm"
-                                                                 >-19%</span
-                                                               >
-                                                               <div class="series-title position-relative bottom-0 align-item-center start-0 end-0 bg-white  text-dark text-center mt-3 "
-                                                               >
-                                                               <div class="product-title">Cajon Meinl WC100B</div>
-                                                               <div class=" position-relative pb-2 fs-5 fw-bolder">3,500,000đ</div>
-                                                             </div>
-                                                             </a>
-                                                           </article>   
-                                                           </div>
-                                </div>
-
-                                 <div class=" product-below-5 col-6 col-sm-4 col-md-4 col-lg-2  ">
-                               <div class="pt-2 ps-4 pe-4 pb-1">
-                                                         <article class="series position-relative">
-                                                           <a href="./productDetail.html" class="series-link d-block text-decoration-none">
-                                                             <img
-                                                               class=" ok-poster mw-100 mt-4"
-                                                               src="https://product.hstatic.net/200000388065/product/45a32e550e6847399b2d8f005f885e00_81e0f5b5eeb24b25aed91dc9f2c43b2c_large.jpeg"
-                                                               alt=""/>
-                                                               <span
-                                                                 class="discount-logo position-absolute top-0 start-0   rounded-end-2 fs-6 p-1 shadow-sm"
-                                                                 >-33%</span
-                                                               >
-                                                               <div class="series-title position-relative bottom-0 align-item-center start-0 end-0 bg-white  text-dark text-center mt-3 "
-                                                               >
-                                                               <div class="product-title">GUITAR ĐIỆN SQUIER AFFINITY STRAT FMT HSS MN BPG BBST</div>
-                                                               <div class=" position-relative pb-2 fs-5 fw-bolder">8,900,000đ</div>
-                                                             </div>
-                                                             </a>
-                                                           </article>   
-                                                           </div>
-                                </div>
-
-                                 <div class="product-below-5  col-6  col-sm-4 col-md-4 col-lg-2  ">
-                               <div class="pt-2 ps-4 pe-4 pb-1">
-                                                         <article class="series position-relative">
-                                                           <a href="./productDetail.html" class="series-link d-block text-decoration-none">
-                                                             <img
-                                                               class=" ok-poster mw-100 mt-4"
-                                                               src="https://product.hstatic.net/200000388065/product/3d915f0433604f6c99c6d18141989b98_403d2682a0d04093b008c865681cf0f4_large.jpeg"
-                                                               alt=""/>
-                                                               <span
-                                                                 class="discount-logo position-absolute top-0 start-0   rounded-end-2 fs-6 p-1 shadow-sm"
-                                                                 >-26%</span
-                                                               >
-                                                               <div class="series-title position-relative bottom-0 align-item-center start-0 end-0 bg-white  text-dark text-center mt-3 "
-                                                               >
-                                                               <div class="product-title">Elixir 12000 Electric 09-42 Polyweb</div>
-                                                               <div class=" position-relative pb-2 fs-5 fw-bolder">300,000đ</div>
-                                                             </div>
-                                                             </a>
-                                                           </article>   
-                                                           </div>
-                                </div>
-                                <div class=" product-below-5 col-6 col-sm-4 col-md-4 col-lg-2  ">
-                               <div class="pt-2 ps-4 pe-4 pb-1">
-                                                         <article class="series position-relative">
-                                                           <a href="./productDetail.html" class="series-link d-block text-decoration-none">
-                                                             <img
-                                                               class=" ok-poster mw-100 mt-4"
-                                                               src="https://product.hstatic.net/200000388065/product/1f01fad94070411e9c9088c4948c28a1_eea9d7c0e210449e8d698e2ae731e6ce_large.jpeg"
-                                                               alt=""/>
-                                                               <span
-                                                                 class="discount-logo position-absolute top-0 start-0   rounded-end-2 fs-6 p-1 shadow-sm"
-                                                                 >-19%</span
-                                                               >
-                                                               <div class="series-title position-relative bottom-0 align-item-center start-0 end-0 bg-white  text-dark text-center mt-3 "
-                                                               >
-                                                               <div class="product-title">Martin Junior Series 000Jr-10 Acoustic Guitar w/Bag</div>
-                                                               <div class=" position-relative pb-2 fs-5 fw-bolder">14,000,000đ</div>
-                                                             </div>
-                                                             </a>
-                                                           </article>   
-                                                           </div>
-                                </div>
-                                <div class="product-below-5 col-6 col-sm-4 col-md-4 col-lg-2  ">
-                               <div class="pt-2 ps-4 pe-4 pb-1">
-                                                         <article class="series position-relative">
-                                                           <a href="./productDetail.html" class="series-link d-block text-decoration-none">
-                                                             <img
-                                                               class=" ok-poster mw-100 mt-4"
-                                                               src="https://product.hstatic.net/200000388065/product/1fa34814ce354fcf8596ebba09707619_1a2c0e22042a4afd82846593592a8b7c_large.jpeg"
-                                                               alt=""/>
-                                                               <span
-                                                                 class="discount-logo position-absolute top-0 start-0   rounded-end-2 fs-6 p-1 shadow-sm"
-                                                                >-19%</span
-                                                               >
-                                                               <div class="series-title position-relative bottom-0 align-item-center start-0 end-0 bg-white  text-dark text-center mt-3 "
-                                                               >
-                                                                <div class="product-title">Microphone RODE NT2-A</div>
-                                                               <div class=" position-relative pb-2 fs-5 fw-bolder">9,400,000đ</div>
-                                                             </div>
-                                                             </a>
-                                                           </article>   
-                                                           </div>
-                                </div>
-                                <div class=" product-below-6  col-6  col-sm-4 col-md-4 col-lg-2  ">
-                               <div class="pt-2 ps-4 pe-4 pb-1">
-                                                         <article class="series position-relative">
-                                                           <a href="./productDetail.html" class="series-link d-block text-decoration-none">
-                                                             <img
-                                                               class="ok-poster mw-100 mt-4"
-                                                               src="https://product.hstatic.net/200000388065/product/c7474e05ab10473d91aaf984a16a6cfb_3f053cac49c9409a85268ed006840bc2_large.jpeg"
-                                                               alt=""/>
-                                                               <span
-                                                                 class="discount-logo position-absolute top-0 start-0   rounded-end-2 fs-6 p-1 shadow-sm"
-                                                                 >-33%</span
-                                                               >
-                                                               <div class="series-title position-relative bottom-0 align-item-center start-0 end-0 bg-white  text-dark text-center mt-3 "
-                                                               >
-                                                               <div class="product-title">Cherub Tuner WST-905Li</div>
-                                                             <div class=" position-relative pb-2 fs-5 fw-bolder ">350,000đ</div>
-                                                             </div>
-                                                             </a>
-                                                           </article>   
-                                                           </div>
-                                </div>
-
-                               
-
-
-                                
-
-                                
-                              </a>
-                            </article>
-                          </div>                        </div>
-                          </div>
-                        </div>
-                      </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-
-
-
-
-                          <div class="container-fluid p-0">
-        <div class="news-section g-0 p-0" style="background-color: #f4f4f7;">
-
-            <div class="News p-4 text-center" style="background-color: #f4f4f7"  >
-              <a class="text-decoration-none" href="./News.html"> <h3> Tin Tức </h3> </a> 
-              <div class="d-flex justify-content-center pt-2" >
-                <div style="width:100px ; border-top: 1px solid black; ">
-                </div>
-              </div> 
-            </div>
-          </div>
-        </div>
-</div> 
-<div class="container-fluid pb-5 " style="background-color: #f4f4f7">
-<div class="container g-0 p-0" style="background-color: #f4f4f7">
- <div class="wrapper-home-banner-servce col-12">
-<div class="container px-0 m-0">
-<div class="row g-0 p-0 flex_content   justify-content-center d-flex justify-content-between">
-
-        <div class="card-news col-6 col-sm-6 col-md-4 col-lg-3 position-relative ">
-          <div class="img-news">
-            <a href="./News.html" class="news-img-wrapper mb-4"><img src="./images/News/News1.png" class="d-block w-100" alt="..."></a>
-            <h5 class="card-title-news position-absolute text-center">4/5</h5>
-          </div>
-          <div>
-          <p class="product-price-news mt-4 fw-bolder ps-4 pe-4">SLASH VÀ CÂU CHUYỆN VỚI KRIS DERRIG LES PAULS..</p>
-          <p class="see-more text-center pb-1">
-  <a href="./newsDetail.html" class="link-underline-dark text-dark" >Xem thêm</a>
-</p>
-
-          </div>
-        </div>
-
-        <div class="card-news col-6 col-sm-6 col-md-4 col-lg-3 position-relative">
-          <div class="img-news">
-            <a href="./News.html" class="news-img-wrapper mb-4"><img src="./images/News/News2.png" class="d-block w-100" alt="..."></a>
-            <h5 class="card-title-news position-absolute text-center">4/5</h5>
-          </div>
-                    <div>
-
-          <p class="product-price-news mt-4  fw-bolder ps-4 pe-4">KIRK HAMMETT TIẾT LỘ SỰ THẬT VỀ CÂY GUITAR BỊ ĐỐT..</p>
-          <p class="see-more text-center pb-1 ">
-  <a href="./newsDetail.html" class="link-underline-dark text-dark" >Xem thêm</a>
-</p>
-
-          </div>
-        </div>
-
-        <div class="card-news col-6 col-sm-6 col-md-4 col-lg-3 position-relative">
-          <div class="img-news">
-            <a href="./News.html" class="news-img-wrapper mb-4"><img src="./images/News/News3.png" class="d-block w-100" alt="..."></a>
-            <h5 class="card-title-news position-absolute text-center">4/5</h5>
-          </div>
-          <div>
-          <p class="product-price-news mt-4  fw-bolder ps-4 pe-4 ">TỔNG HỢP CÁC BẢN NHẠC GUITAR TIÊU BIỂU GÓI GỌN..</p>
-          <p class="see-more text-center pb-1">
-  <a href="./newsDetail.html" class="link-underline-dark text-dark" >Xem thêm</a>
-</p>
-
-          </div>
-        </div>
-
-        <div class="card-news col-6 col-sm-6 col-md-4 col-lg-3 position-relative">
-          <div class="img-news">
-            <a href="./News.html" class="news-img-wrapper mb-4"><img src="./images/News/News4.png" class="d-block w-100" alt="..."></a>
-            <h5 class="card-title-news position-absolute text-center">4/5</h5>
-          </div>
-          <div>
-          <p class="product-price-news mt-4  fw-bolder ps-4 pe-4 ">CÂY KRAMER CỦA EDDIE VAN HALEN XUẤT HIỆN TRONG..</p>
-          <p class="see-more text-center pb-1">
-  <a href="./newsDetail.html" class="link-underline-dark text-dark" >Xem thêm</a>
-</p>
-
-          </div>
-        </div>
-       
-
-      </div>
-    </div>
-  </div>
-</div>
-
-</div>
-</div>
-
-
-
-
-
-                          <div class="container">
-        <div class="row">
-          <div class="col-12 " style="background-color: #f4f4f7;">
-            <div class="News m-4 text-center"  >
-              <a class="text-decoration-none" href=""> <h3> Tin Tức </h3> </a> 
-              <div class="d-flex justify-content-center pt-2" >
-                <div style="width:100px ; border-top: 1px solid black; ">
-                </div>
-              </div> 
-            </div>
-          </div>
-        </div>
-</div> 
-
-<div class="container-fluid g-0 p-0">
- <div class="wrapper-home-banner-servce col-12">
-<div class="container px-0 m-0">
-<div class="row g-0 p-0 flex_content   justify-content-center d-flex justify-content-between">
-
-
-<footer>
-  <div class="container d-flex justify-content-center">
-    <div class="footer-section row pt-4 pb-2  d-flex flex-wrap">
-
-      <div class="col-12 col-sm-6 mb-3">
-        <div class="card-footer">
-          <div class="card-body-footer">
-            <h3  class="card-title pt-4 pb-4 position-relative" style="font-size:46px;line-height: 40px;">Guitar house.</h3>
-            <p class="card-text position-relative" style="color: #7a7a7a;font-size:16px;">Ngôi nhà thanh âm thuần khiết của bạn.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 d-flex col-sm-6 align-items-center justify-content-end">
-        <div class="card-footer">
-          <div class="card-body-footer text-center justify-content-center">
-            <div class="soccial-icon d-flex  ">
-              <a class="text-decoration-none text-dark p-4 fs-4" href=""><i class="fa fa-facebook"></i></a>
-             
-              <a class="text-decoration-none text-dark p-4 fs-4" href=""><i class="fa fa-instagram"></i></a>
-              <a class="text-decoration-none text-dark p-4 fs-4" href=""><i class="fa fa-youtube"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-<button onclick="scrollToTop()" id="scrollToTopBtn" class="justify-content-center align-items-center" title="Lên đầu trang"><img src="./images/arrowhead-up.png" style="width:20px; height:20px; margin-bottom: 5px;"></button>
-
-
-
-
-
-
-
-
-</div>
-</div>
-</main>
-    
-<!-- Latest compiled and minified JavaScript -->
-
-
-
-
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
- <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-beta2/js/bootstrap.min.js"></script>
- 
- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
- <script src="index.js"></script>
- 
-</body>
-</html>
-</div>
-</div>
-          
-
+    height: auto;
+    border: 1px solid #eeee;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+  }
+  .navbar-items {
+    padding: 0px;
+  }
+  .user {
+    padding: 0px;
+  }
+  .cart {
+    padding-left: 4px;
+  }
+  .search-button {
+    padding-right: 0px;
+  }
+  .slider-group:hover .img-wrapper {
+    filter: opacity(0.9);
+  }
+
+  .card {
+    margin: 0 0.5em;
+
+    border: none;
+  }
+  .desc,
+  .card-title {
+    font-size: 16px;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .second-caro-prev,
+  .second-caro-next {
+    border-color: 1px solid black;
+    background-color: #e1e1e1;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .slider-inside .slider-group.active,
+  .slider-inside .second-caro-next,
+  .slider-inside .second-caro-prev {
+    display: flex;
+  }
+}
+
+.my-prev,
+.my-next {
+  display: none;
+}
+/* Featured products */
+
+/* service product */
+
+.services-box-1,
+.services-box-2,
+.services-box-3 {
+  max-width: 330px;
+  height: 200px;
+  padding: 0px 4px 0px;
+  margin: 9px 0 0;
+  background-color: white;
+  border: 1px solid #eeee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: none;
+}
+.services-box-1:hover .title,
+.services-box-2:hover .title,
+.services-box-3:hover .title {
+  /* background-color: #eeee; */
+
+  transform: scaleX(1.1); /* Giãn chữ ra 1.2 lần */
+}
+
+.services-box-1:hover,
+.services-box-2:hover,
+.services-box-3:hover {
+  background-color: #f4f4f7;
+}
+
+.services-box-1:hover .my-img,
+.services-box-2:hover .my-img,
+.services-box-3:hover .my-img {
+  filter: opacity(0.5);
+}
+.my-img {
+  width: 50px;
+  color: gray;
+  transition: filter 0.3s ease-in-out; /* Thời gian và kiểu chuyển đổi */
+}
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  transition: transform 0.3s ease-in-out; /* Thời gian và kiểu chuyển đổi */
+}
+
+.title:hover {
+  transform: scaleX(1.1); /* Giãn chữ ra 1.2 lần */
+}
+
+.my-img:hover {
+  filter: grayscale(80%); /* Chuyển ảnh sang màu xám */
+}
+
+.services-box-1 {
+  border-right: 1px solid #eeee;
+}
+.services-box-2 {
+  border-right: 1px solid #eeee;
+  border-left: 1px solid #eeee;
+}
+
+.services-box-3 {
+  border-left: 1px solid #eeee;
+}
+
+/* best seller */
+
+h3 {
+  color: black;
+
+  font-family: "Oswald";
+
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.discount-logo {
+  color: #f94c43;
+  background-color: white;
+}
+.product-below-1 {
+  border: 1px solid #eeee;
+  border-left: none;
+  border-top: none;
+}
+
+.product-below-2 {
+  border: 1px solid #eeee;
+  /* border-left: none; */
+  border-top: none;
+  /* border-right: none; */
+}
+
+.product-below-3 {
+  border: 1px solid #eeee;
+  border-right: none;
+  border-top: none;
+}
+
+.product-below-4 {
+  border: 1px solid #eeee;
+  border-left: none;
+  border-bottom: none;
+  /* border-right: none; */
+}
+.product-below-5 {
+  border: 1px solid #eeee;
+  border-bottom: none;
+}
+
+.product-below-6 {
+  border: 1px solid #eeee;
+  border-right: none;
+  border-bottom: none;
+}
+
+.ok-poster:hover {
+  filter: opacity(0.75);
+}
+
+.product-title {
+  font-size: 14px;
+  text-align: start;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.section-content {
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+
+.old-price {
+  font-size: 14px;
+}
+/* news */
+
+.img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+/* news */
+
+.img-wrapper .image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.img-wrapper:hover .image-overlay {
+  opacity: 1;
+}
+
+.card-title-news {
+  top: 90%;
+  left: 17%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  margin-top: 3px;
+
+  padding: 2px 20px 4px 20px;
+}
+
+.img-news {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-news img {
+  transition: transform 0.5s;
+}
+
+.img-news:hover img {
+  transform: scale(1.2);
+}
+
+.see-more:hover {
+  filter: opacity(0.75);
+}
+
+/* backtotop */
+
+#scrollToTopBtn:hover {
+  background-color: #bfbfbf; /* Màu nền của nút khi hover */
+}
+
+.modal-header {
+  justify-content: center;
+  padding-left: 200px;
+}
+
+/* modal đăng nhập */
+
+.modal.fade .modal-dialog {
+  transform: scale(0.8);
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.modal.fade.show .modal-dialog {
+  transform: scale(1);
+}
+
+.footer-section {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 30px;
+  width: 1200px;
+  border-top: none;
+}
+
+/* footer */

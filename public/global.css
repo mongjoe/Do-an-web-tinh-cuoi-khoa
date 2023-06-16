@@ -1,43 +1,61 @@
-.nav-item {
-  font-family: Helvetica;
-  font: size 14px;
-  font-weight: 550;
+.nav-item .nav-link,
+.navbar-nav .nav-item,
+.collapse navbar-collapse .nav {
+  font-family: "Roboto Flex";
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+.navbar-part {
+  margin-left: 100px;
+  justify-content: center;
+  padding-left: 40px;
+  margin-right: auto;
+}
+
+.dropdown-menu .dropdown-item {
+  font-family: "Roboto Flex";
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  line-height: 21px;
   text-transform: uppercase;
 }
 
-.my-input-form { 
+.my-input-form {
   appearance: none;
 
   border-bottom: 1px solid black;
   outline: none;
   background-color: transparent;
-  width:140px;
+  width: 140px;
 }
 
 .search-button {
-  border-top:hidden;
-  border-left:hidden;
-  border-right:hidden ;
+  border: hidden;
+  opacity: 3;
   color: black;
   background-color: transparent;
-  border-bottom: 1px solid black;
- outline: none ;
+
+  outline: none;
   appearance: none;
 }
 
-.user { 
-  border:hidden;
+.user {
+  border: hidden;
   color: black;
   background-color: transparent;
-  outline: none ;
+  outline: none;
   appearance: none;
 }
 
-.cart{
-  border:hidden;
+.cart {
+  border: hidden;
   color: black;
   background-color: transparent;
- outline: none ;
+  outline: none;
   appearance: none;
 }
 .services-box {
@@ -84,6 +102,25 @@
   }
   .slider-inside {
     display: flex;
+  }
+
+/* backtotop */
+  #scrollToTopBtn {
+    display: none; /* Mặc định ẩn nút */
+    position: fixed; /* Vị trí cố định */
+    bottom: 100px; /* Khoảng cách từ nút đến bottom */
+    right: 20px; /* Khoảng cách từ nút đến right */
+    width: 40px; /* Chiều rộng của nút */
+    height: 40px; /* Chiều cao của nút */
+    background-color: #f2f3f5; /* Màu nền của nút */
+    color: #292929; /* Màu chữ của nút */
+    border: none; /* Không có viền */
+    border-radius: 50%; /* Bo góc tròn */
+    font-size: 20px; /* Kích thước chữ */
+    text-align: center; /* Căn giữa nội dung */
+    justify-content: center;
+    cursor: pointer; /* Chỉ tay khi di chuột vào */
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
   }
 
 .card .img-wrapper {
@@ -137,6 +174,29 @@ padding-left:4px;
   filter: opacity(0.9);
 }
 
+.card-footer {
+    padding-left: 25px;
+    padding-right: 10px;
+  }
+
+/* backtotop */
+  #scrollToTopBtn {
+    display: none; /* Mặc định ẩn nút */
+    position: fixed; /* Vị trí cố định */
+    bottom: 130px; /* Khoảng cách từ nút đến bottom */
+    right: 20px; /* Khoảng cách từ nút đến right */
+    width: 40px; /* Chiều rộng của nút */
+    height: 40px; /* Chiều cao của nút */
+    background-color: #f2f3f5; /* Màu nền của nút */
+    color: #292929; /* Màu chữ của nút */
+    border: none; /* Không có viền */
+    border-radius: 50%; /* Bo góc tròn */
+    font-size: 20px; /* Kích thước chữ */
+    text-align: center; /* Căn giữa nội dung */
+    justify-content: center;
+    cursor: pointer; /* Chỉ tay khi di chuột vào */
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  }
 .card {
   margin: 0 0.5em;
 
@@ -154,3 +214,32 @@ padding-left:4px;
 
 
 }
+
+.breadcrumb {
+  background-color: #eeee;
+  border: 1px solid #eeee;
+  height: 40px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+}
+.breadcrumb-item {
+  font-size: 13px;
+}
+.brand-button:focus {
+  background-color: white;
+  outline: none;
+  border: none;
+}
+
+
+.footer-section {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 30px;
+  width: 1200px;
+  border-top: none;
+}
+
+.card-title {
+    font-size: 16px;
+  }

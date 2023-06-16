@@ -54,7 +54,7 @@ function scrollToTop() {
 
 window.addEventListener("scroll", function () {
   var scrollToTopBtn = document.getElementById("scrollToTopBtn");
-  if (document.documentElement.scrollTop > 3000) {
+  if (document.documentElement.scrollTop > 2000) {
     scrollToTopBtn.style.display = "block";
   } else {
     scrollToTopBtn.style.display = "none";
@@ -86,3 +86,9 @@ document.querySelector(".user").addEventListener("click", function () {
   var modal = document.querySelector("#registerModal");
   modal.classList.add("animate__animated", "animate__zoomIn");
 });
+
+
+
+
+
+//

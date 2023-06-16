@@ -101,7 +101,7 @@ border-left : 1px splid #bbb;
 
   .product-part{
 
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 0 6px rgba(0, 0, 0, 0.2); */
 
   background-color: white;
 }
@@ -156,3 +156,39 @@ border-left : 1px splid #bbb;
   margin-bottom: 10px;
   font-weight: 500;
 }
+
+
+.accordion-body:focus,
+.accordion-button:focus {
+  box-shadow: none !important;
+  border-color: white ;
+  background-color:  white;
+}
+.accordion-body:not(.collapsed),
+.accordion-button:not(.collapsed) {
+  color: black;
+  border-color:none;
+  background-color: white;
+}
+.accordion-body,
+.accordion-btn-active {
+  border-color: white;
+  color:none;
+  background-color: white;
+  z-index:unset;
+} 
+
+.accordion-btn:focus{
+  border-color:none;
+color:none;
+background-color: white;
+}
+.accordion-collapse {
+  background-color: white;
+}
+.bs-accordion-active-bg{
+  color:none;
+} 
+
+
+

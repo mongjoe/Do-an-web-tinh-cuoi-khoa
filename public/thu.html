@@ -9,8 +9,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,700&display=swap" rel="stylesheet">
     
-
-  <link href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'/>
     <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
@@ -255,37 +253,68 @@ crossorigin="anonymous"
 </div>
 
 
+<!-- HTML -->
+<div id="product-container">
+  <!-- Hiển thị sản phẩm -->
+  <div class="product"><img src="./images/FeaturedProducts/Acoustic.jpg"
+  
+  >Sản phẩm 1</div>
+  <div class="product"><img src="./images/FeaturedProducts/Acoustic.jpg">Sản phẩm 2</div>
+  <div class="product"<img src="./images/FeaturedProducts/Acoustic.jpg"
+  
+  >Sản phẩm 3</div>
+  <div class="product"><img src="./images/FeaturedProducts/Acoustic.jpg">
+  
+  Sản phẩm 4</div>
+  <div class="product"><img src="./images/FeaturedProducts/Acoustic.jpg"
+  
+  >Sản phẩm 5</div>
+ 
+</div>
+
+<button id="load-more-btn">Xem thêm</button>
 
 
-<footer>
-  <div class="container d-flex justify-content-center">
-    <div class="footer-section row pt-4 pb-2  d-flex flex-wrap">
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  var loadMoreBtn = document.getElementById("load-more-btn");
+  var productContainer = document.getElementById("product-container");
 
-      <div class="col-12 col-sm-6 mb-3">
-        <div class="card-footer">
-          <div class="card-body-footer">
-            <h3 class="card-title pt-4 pb-4 position-relative" style="font-size:46px;line-height: 40px;">Guitar house.</h3>
-            <p class="card-text position-relative" style="color: #7a7a7a;font-size:16px;">Ngôi nhà âm nhạc của bạn.</p>
-          </div>
-        </div>
-      </div>
+  var start = 5; // Số sản phẩm ban đầu
+  var increment = 3; // Số sản phẩm được tải thêm mỗi lần
 
-      <div class="col-12 d-flex col-sm-6 align-items-center justify-content-end">
-        <div class="card-footer">
-          <div class="card-body-footer text-center justify-content-center">
-            <div class="soccial-icon d-flex  ">
-              <a class="text-decoration-none text-dark p-4 fs-4" href="https://www.facebook.com/vintage.rim.blackberry"><i class="fa fa-facebook"></i></a>
-             
-              <a class="text-decoration-none text-dark p-4 fs-4" href="https://www.instagram.com/vintage.rim.blackberry/"><i class="fa fa-instagram"></i></a>
-              <a class="text-decoration-none text-dark p-4 fs-4" href="https://www.youtube.com/c/VintageRIMBlackBerry?sub_confirmation=1"><i class="fa fa-youtube"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-<button onclick="scrollToTop()" id="scrollToTopBtn" class="justify-content-center align-items-center" title="Lên đầu trang"><img src="./images/arrowhead-up.png" style="width:20px; height:20px; margin-bottom: 5px;"></button>
+  loadMoreBtn.addEventListener("click", function() {
+    var products = getProducts(start, increment); // Hàm lấy danh sách sản phẩm (được giả định ở đây)
+    
+    if (products.length > 0) {
+      for (var i = 0; i < products.length; i++) {
+        var productElement = document.createElement("div");
+        productElement.className = "product";
+        productElement.innerText = products[i];
+        productContainer.appendChild(productElement);
+      }
+      
+      start += increment; // Tăng số sản phẩm bắt đầu để lần sau tải thêm
+    } else {
+      loadMoreBtn.style.display = "none"; // Nếu không còn sản phẩm, ẩn nút "Xem thêm"
+    }
+  });
+
+  function getProducts(start, increment) {
+    // Hàm này sẽ lấy danh sách sản phẩm từ nguồn dữ liệu (API, database, etc.) dựa trên start và increment
+    // Ở đây, để mô phỏng, chúng ta chỉ trả về một mảng chuỗi có số lượng tương ứng
+    var products = [];
+    
+    for (var i = 1; i <= increment; i++) {
+      var productNumber = start + i;
+      products.push("Sản phẩm " + productNumber);
+    }
+    
+    return products;
+  }
+});
+</script>
+
 
 
 

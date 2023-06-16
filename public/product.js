@@ -23,3 +23,7 @@ function handleLogin(event) {
 // Gán hàm xử lý sự kiện cho biểu mẫu đăng nhập
 var loginForm = document.getElementById("loginForm");
 loginForm.addEventListener("submit", handleLogin);
+
+
+// nút xem thêm
+

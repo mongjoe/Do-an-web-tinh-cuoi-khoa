@@ -1,0 +1,24 @@
+.img-wrapper .image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 30%;
+
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.card-news {
+width: 1000px;
+  height: auto;
+  border: 1px solid #eeee;
+  margin: 0;
+  padding: 0;
+}
+.img-news{
+width: 30%;
+    height: auto;
+}
+
+

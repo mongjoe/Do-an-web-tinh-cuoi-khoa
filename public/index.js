@@ -54,11 +54,7 @@ function scrollToTop() {
 
 window.addEventListener("scroll", function () {
   var scrollToTopBtn = document.getElementById("scrollToTopBtn");
-<<<<<<< HEAD
   if (document.documentElement.scrollTop > 2000) {
-=======
-  if (document.documentElement.scrollTop > 3000) {
->>>>>>> 2bd0d8f07593ee0fcc72b83e1f1c94bc7e7fb0b5
     scrollToTopBtn.style.display = "block";
   } else {
     scrollToTopBtn.style.display = "none";
@@ -90,12 +86,9 @@ document.querySelector(".user").addEventListener("click", function () {
   var modal = document.querySelector("#registerModal");
   modal.classList.add("animate__animated", "animate__zoomIn");
 });
-<<<<<<< HEAD
 
 
 
 
 
 //
-=======
->>>>>>> 2bd0d8f07593ee0fcc72b83e1f1c94bc7e7fb0b5

@@ -42,11 +42,68 @@ if (window.matchMedia("(min-width: 768px)").matches) {
       }
     });
 
-  // setInterval(nextSlide, 6000); // Slide tự động chạy sau mỗi 3 giây
+  // setInterval(nextSlide, 1000); // Slide tự động chạy sau mỗi 1 giây
+
+  // Thêm thuộc tính scroll-behavior: smooth vào lớp "slider-inside"
+  document.querySelector(".slider-inside").style.scrollBehavior = "smooth";
 } else {
   multipleCardCarousel.classList.add("slide");
 }
 
+// Responsive for tablet screen (iPad)
+if (window.matchMedia("(min-width: 768px) and (max-width: 1024px)").matches) {
+  var carousel = new bootstrap.Carousel(multipleCardCarousel, {});
+  var carouselWidth = document.querySelector(".slider-inside").scrollWidth;
+  var cardWidth = document.querySelector(".slider-group").offsetWidth;
+  var scrollPosition = 0;
+
+  function nextSlide() {
+    if (scrollPosition < carouselWidth - cardWidth * 3) {
+      scrollPosition += cardWidth;
+      document.querySelector(
+        "#carouselExampleControls .slider-inside"
+      ).scrollLeft = scrollPosition;
+    } else {
+      // If at the last image, go back to the first image
+      scrollPosition = 0;
+      document.querySelector(
+        "#carouselExampleControls .slider-inside"
+      ).scrollLeft = scrollPosition;
+    }
+  }
+
+  document
+    .querySelector("#carouselExampleControls .carousel-control-next")
+    .addEventListener("click", nextSlide);
+
+  document
+    .querySelector("#carouselExampleControls .carousel-control-prev")
+    .addEventListener("click", function () {
+      if (scrollPosition > 0) {
+        scrollPosition -= cardWidth;
+        document.querySelector(
+          "#carouselExampleControls .slider-inside"
+        ).scrollLeft = scrollPosition;
+      } else {
+        // If at the first image, go back to the last image
+        scrollPosition = carouselWidth - cardWidth * 3;
+        document.querySelector(
+          "#carouselExampleControls .slider-inside"
+        ).scrollLeft = scrollPosition;
+      }
+    });
+
+  // setInterval(nextSlide, 1000); // Auto slide every 1 second
+
+  // Add scroll-behavior: smooth property to the "slider-inside" class
+  document.querySelector(".slider-inside").style.scrollBehavior = "smooth";
+} else {
+  multipleCardCarousel.classList.add("slide");
+}
+
+
+
+// scroll to top
 function scrollToTop() {
   window.scrollTo({
     top: 0,
@@ -90,3 +147,22 @@ document.querySelector(".user").addEventListener("click", function () {
 });
 
 //
+
+
+// //điều hướng liên hệ
+// // Bắt sự kiện click vào đường liên kết
+//   $(document).ready(function () {
+//     $("a[data-target]").on("click", function (event) {
+//       event.preventDefault();
+
+//       var target = $(this).data("target");
+//       var $targetElement = $(target);
+
+//       $("html, body").animate(
+//         {
+//           scrollTop: $targetElement.offset().top,
+//         },
+//         500
+//       );
+//     });
+//   });

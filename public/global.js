@@ -13,3 +13,29 @@ window.addEventListener("scroll", function () {
     scrollToTopBtn.style.display = "none";
   }
 });
+
+//modal//
+const myModal = document.getElementById("myModal");
+const myInput = document.getElementById("myInput");
+
+myModal.addEventListener("shown.bs.modal", () => {
+  myInput.focus();
+});
+
+document.querySelector(".user").addEventListener("click", function () {
+  var modal = document.querySelector("#registerModal");
+  modal.classList.add("animate__animated", "animate__zoomIn");
+});
+
+//modal singin
+const myModal1 = document.getElementById("myModal");
+const myInput1 = document.getElementById("myInput");
+
+myModal.addEventListener("shown.bs.modal", () => {
+  myInput.focus();
+});
+
+document.querySelector(".user").addEventListener("click", function () {
+  var modal = document.querySelector("#registerModal");
+  modal.classList.add("animate__animated", "animate__zoomIn");
+});

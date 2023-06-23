@@ -180,6 +180,10 @@ background-color: white;
 .bs-accordion-active-bg{
   color:none;
 } 
+.product-part{
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+
+}
 
 
 

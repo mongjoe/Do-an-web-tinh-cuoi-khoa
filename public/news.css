@@ -1,24 +1,48 @@
-.img-wrapper .image-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 30%;
-  height: 30%;
-
-  opacity: 0;
-  transition: opacity 0.5s;
-}
-
 .card-news {
-width: 1000px;
-  height: auto;
-  border: 1px solid #eeee;
-  margin: 0;
-  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+
 }
-.img-news{
-width: 30%;
+
+/* màn nhỏ */
+@media (max-width: 767px) {
+  .img-news {
+    justify-content: center;
+    width: 100%;
     height: auto;
+    display: flex;
+
+  }
+
+  .right-side{
+    padding-left:20px;
+    margin-bottom: 20px;
+  }
 }
 
 
+/* màn ipad */
+@media(min-width:768px) and (max-width:1023px){
+  
+.right-side{
+    padding-left:20px;
+    margin-bottom: 10px;
+  }
+
+}
+/* màn lớn */
+@media (min-width: 1024px) {
+  
+  .right-side{
+    padding-left: 30px;
+    padding-top: 10px;
+    background-color: white;
+    margin-bottom: 0px;
+  }
+}
+
+.right-side{
+  border-bottom:1px solid #ddd;
+    margin-bottom: 0px;
+
+}

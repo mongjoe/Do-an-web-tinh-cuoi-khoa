@@ -39,3 +39,29 @@ document.querySelector(".user").addEventListener("click", function () {
   var modal = document.querySelector("#registerModal");
   modal.classList.add("animate__animated", "animate__zoomIn");
 });
+
+
+//modal
+ // Tắt hiệu ứng fade in của modal khi trang được tải
+  document.addEventListener('DOMContentLoaded', function() {
+    var modal = document.getElementById('exampleModal');
+    modal.classList.remove('fade');
+  });
+
+
+
+
+//offcanvas close-button
+
+  document.addEventListener("DOMContentLoaded", function() {
+    // Lấy tham chiếu đến nút "btn btn-close"
+    var closeButton = document.querySelector(".btn.btn-close");
+
+    // Lắng nghe sự kiện click trên nút "btn btn-close"
+    closeButton.addEventListener("click", function() {
+      // Đóng offcanvas
+      var offcanvas = document.querySelector(".offcanvas");
+      var offcanvasInstance = bootstrap.Offcanvas.getInstance(offcanvas);
+      offcanvasInstance.hide();
+    });
+  });

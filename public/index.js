@@ -1,6 +1,31 @@
+//offcanvas close-button
+
+  document.addEventListener("DOMContentLoaded", function() {
+    // Lấy tham chiếu đến nút "btn btn-close"
+    var closeButton = document.querySelector(".btn.btn-close");
+
+    // Lắng nghe sự kiện click trên nút "btn btn-close"
+    closeButton.addEventListener("click", function() {
+      // Đóng offcanvas
+      var offcanvas = document.querySelector(".offcanvas");
+      var offcanvasInstance = bootstrap.Offcanvas.getInstance(offcanvas);
+      offcanvasInstance.hide();
+    });
+  });
+
+ //modal
+ // Tắt hiệu ứng fade in của modal khi trang được tải
+  document.addEventListener('DOMContentLoaded', function() {
+    var modal = document.getElementById('exampleModal');
+    modal.classList.remove('fade');
+  });
+
+
+//carousel
+
 var multipleCardCarousel = document.querySelector("#carouselExampleControls");
 
-if (window.matchMedia("(min-width: 768px)").matches) {
+if (window.matchMedia("(min-width: 1024px)").matches) {
   var carousel = new bootstrap.Carousel(multipleCardCarousel, {});
   var carouselWidth = document.querySelector(".slider-inside").scrollWidth;
   var cardWidth = document.querySelector(".slider-group").offsetWidth;
@@ -41,65 +66,21 @@ if (window.matchMedia("(min-width: 768px)").matches) {
         ).scrollLeft = scrollPosition;
       }
     });
-
-  // setInterval(nextSlide, 1000); // Slide tự động chạy sau mỗi 1 giây
-
-  // Thêm thuộc tính scroll-behavior: smooth vào lớp "slider-inside"
-  document.querySelector(".slider-inside").style.scrollBehavior = "smooth";
-} else {
-  multipleCardCarousel.classList.add("slide");
 }
 
-// Responsive for tablet screen (iPad)
-if (window.matchMedia("(min-width: 768px) and (max-width: 1024px)").matches) {
-  var carousel = new bootstrap.Carousel(multipleCardCarousel, {});
-  var carouselWidth = document.querySelector(".slider-inside").scrollWidth;
-  var cardWidth = document.querySelector(".slider-group").offsetWidth;
-  var scrollPosition = 0;
+// Tắt hiệu ứng animation cho ảnh mới được load của carousel
+multipleCardCarousel.addEventListener("slide.bs.carousel", function () {
+  document.querySelectorAll(".carousel-item").forEach(function (item) {
+    item.style.transition = "none";
+  });
+});
 
-  function nextSlide() {
-    if (scrollPosition < carouselWidth - cardWidth * 3) {
-      scrollPosition += cardWidth;
-      document.querySelector(
-        "#carouselExampleControls .slider-inside"
-      ).scrollLeft = scrollPosition;
-    } else {
-      // If at the last image, go back to the first image
-      scrollPosition = 0;
-      document.querySelector(
-        "#carouselExampleControls .slider-inside"
-      ).scrollLeft = scrollPosition;
-    }
-  }
+//Thêm hiệu ứng chuyển cảnh mượt cho slide
+// document.querySelector(".slider-inside").style.scrollBehavior = "smooth";
 
-  document
-    .querySelector("#carouselExampleControls .carousel-control-next")
-    .addEventListener("click", nextSlide);
 
-  document
-    .querySelector("#carouselExampleControls .carousel-control-prev")
-    .addEventListener("click", function () {
-      if (scrollPosition > 0) {
-        scrollPosition -= cardWidth;
-        document.querySelector(
-          "#carouselExampleControls .slider-inside"
-        ).scrollLeft = scrollPosition;
-      } else {
-        // If at the first image, go back to the last image
-        scrollPosition = carouselWidth - cardWidth * 3;
-        document.querySelector(
-          "#carouselExampleControls .slider-inside"
-        ).scrollLeft = scrollPosition;
-      }
-    });
 
-  // setInterval(nextSlide, 1000); // Auto slide every 1 second
 
-  // Add scroll-behavior: smooth property to the "slider-inside" class
-  document.querySelector(".slider-inside").style.scrollBehavior = "smooth";
-} else {
-  multipleCardCarousel.classList.add("slide");
-}
 
 
 

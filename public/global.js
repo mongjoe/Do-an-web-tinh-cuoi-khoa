@@ -41,13 +41,6 @@ document.querySelector(".user").addEventListener("click", function () {
 });
 
 
-//modal
- // Tắt hiệu ứng fade in của modal khi trang được tải
-  document.addEventListener('DOMContentLoaded', function() {
-    var modal = document.getElementById('exampleModal');
-    modal.classList.remove('fade');
-  });
-
 
 
 
@@ -65,3 +58,17 @@ document.querySelector(".user").addEventListener("click", function () {
       offcanvasInstance.hide();
     });
   });
+
+ //modal
+ // Tắt hiệu ứng fade in của modal khi trang được tải
+  document.addEventListener('DOMContentLoaded', function() {
+    var modal = document.getElementById('exampleModal');
+    modal.classList.remove('fade');
+  });
+
+
+
+
+
+
+

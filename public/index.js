@@ -130,20 +130,20 @@ document.querySelector(".user").addEventListener("click", function () {
 //
 
 
-// //điều hướng liên hệ
-// // Bắt sự kiện click vào đường liên kết
-//   $(document).ready(function () {
-//     $("a[data-target]").on("click", function (event) {
-//       event.preventDefault();
+//điều hướng liên hệ
+// Bắt sự kiện click vào đường liên kết
+  $(document).ready(function () {
+    $("a[data-target]").on("click", function (event) {
+      event.preventDefault();
 
-//       var target = $(this).data("target");
-//       var $targetElement = $(target);
+      var target = $(this).data("target");
+      var $targetElement = $(target);
 
-//       $("html, body").animate(
-//         {
-//           scrollTop: $targetElement.offset().top,
-//         },
-//         500
-//       );
-//     });
-//   });
+      $("html, body").animate(
+        {
+          scrollTop: $targetElement.offset().top,
+        },
+        500
+      );
+    });
+  });

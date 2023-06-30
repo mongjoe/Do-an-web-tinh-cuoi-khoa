@@ -10,6 +10,15 @@
   text-transform: uppercase;
 }
 
+.my-input-form2:focus {
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+    border: 1px solid black;
+}
+.dropdown-menu show
+.dropdown-link:active{
+  background-color: black !important
+}
+
 .dropdown-menu .dropdown-item {
   font-family: "Roboto Flex";
   font-size: 14px;

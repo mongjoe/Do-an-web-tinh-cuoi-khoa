@@ -147,3 +147,22 @@ document.querySelector(".user").addEventListener("click", function () {
       );
     });
   });
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // Lấy tham chiếu đến nút tìm kiếm và form tìm kiếm
+    var searchButton = document.getElementById("searchIcon");
+    var searchInput = document.querySelector(
+      "#exampleModal input[type='search']"
+    );
+
+    // Lắng nghe sự kiện click trên nút tìm kiếm
+    searchButton.addEventListener("click", function () {
+      // Mở modal
+      var modal = new bootstrap.Modal(document.getElementById("exampleModal"));
+      modal.show();
+
+      // Focus vào ô nhập liệu trong form tìm kiếm
+      searchInput.focus();
+    });
+  });

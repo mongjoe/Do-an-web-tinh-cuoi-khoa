@@ -16,10 +16,24 @@ html {
   padding-left: 40px;
   margin-right: auto;
 } */
+.my-input-form2{
+  border:1px solid #ccc;
+}
+.modal-content {
+  border: 1px solid black;
+}
+
+
+
+
 .dropdown-menu
 .dropdown-link:active{
   background-color: black;}
 
+.my-input-form2:focus {
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+    border: 1px solid black;
+}
 
 .dropdown-menu .dropdown-item {
   font-family: "Roboto Flex";
@@ -64,6 +78,21 @@ html {
     width: 160px;
     margin-right: 2px;
     border-radius: 0%;
+  }
+
+   .arrow-up {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    /* margin-top:10px; */
+    margin-left: 30px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid black;
+  
   }
   .my-input-form:focus {
     border: 1px solid #ccc;
@@ -548,7 +577,13 @@ margin-top: 2px;
   .product-description{
     min-height: 100vh;
   }
- 
+ .image-parent {
+    /* margin-bottom: 20px; */
+    border-bottom: 1px solid #eee;
+    /* padding-bottom: 10px; */
+
+  }
+
   .card .img-wrapper {
     height: 30em;
   }

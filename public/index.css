@@ -9,10 +9,31 @@
   line-height: 21px;
   text-transform: uppercase;
 }
-
+.modal-content {
+  border: 1px solid black;
+}
 .my-input-form2:focus {
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
     border: 1px solid black;
+      
+}
+
+  .arrow-up {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    /* margin-top:10px; */
+    margin-left: 30px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid black;
+  }
+
+.my-input-form2{
+  border:1px solid #ccc;
 }
 .dropdown-menu show
 .dropdown-link:active{

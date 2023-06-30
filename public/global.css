@@ -80,6 +80,9 @@ html {
     border-radius: 0%;
   }
 
+  .breadcrumb {
+  padding-left:50px
+}
    .arrow-up {
     position: absolute;
     top: -10px;
@@ -583,6 +586,9 @@ margin-top: 2px;
     /* padding-bottom: 10px; */
 
   }
+  .breadcrumb {
+  padding-left:20px
+}
 
   .card .img-wrapper {
     height: 30em;
@@ -878,6 +884,9 @@ opacity: 0.8;
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 500;
 }
+
+
+
 .breadcrumb-item {
   font-size: 14px;
 }

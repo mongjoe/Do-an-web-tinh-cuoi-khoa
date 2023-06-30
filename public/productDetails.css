@@ -10,6 +10,8 @@
 .product-section__content {
   border-bottom: none;
   padding-bottom: 30px;
+  padding-left: none;
+  padding-right: none;
 }
 
 .product-details-section,
@@ -38,6 +40,10 @@
 }
 
 @media (min-width: 768px) {
+ .add-to-cartProduct {
+  width: 250px;
+  }
+
 }
 @media (max-width: 767px) {
   .product-right-component {
@@ -64,6 +70,9 @@
   }
   .info-product {
     margin-left: 50px;
+  }
+  .add-to-cartProduct {
+  width: 300px;
   }
 }
 
@@ -104,7 +113,7 @@
   line-height: 22px;
   text-align: center;
   text-transform: uppercase;
-  width: 250px;
+  /* width: 250px; */
   height: 52px;
 }
 

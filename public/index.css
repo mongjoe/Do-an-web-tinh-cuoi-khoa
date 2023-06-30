@@ -319,17 +319,12 @@ margin-top: 2px;
     /* margin-right:20px; */
     padding-left: 0;
   }
-.search-menu{
-  display: none;
-}
   .modal-user-image {
     justify-content: center;
     align-items: center;
   }
-  .btn.off-shut:focus{
-  box-shadow: none;
-}
-  .search-form {
+
+   .search-form {
     display: none;
     width: 46px;
     height: 42px;
@@ -347,6 +342,16 @@ margin-top: 2px;
     filter: opacity(1.5);
   }
 
+
+
+.search-menu{
+  display: none;
+}
+  
+  .btn.off-shut:focus{
+  box-shadow: none;
+}
+ 
   .navbar-part {
     display: flex;
     justify-content: start;
@@ -391,11 +396,7 @@ margin-top: 2px;
     order: 1;
   }
 
-  .inside {
-    display: flex;
-    padding-bottom: 10px;
-    padding-right: 6px;
-  }
+  
   .search-bar {
     order: 2;
   }
@@ -437,7 +438,46 @@ margin-top: 2px;
   }
 
 
+  .navbar-items {
+    padding: 20px;
+   
+  }
+  .navbar-small {
+  margin-bottom: 0;
+  padding-right: 0px;
+}
+  .user {
+    border: none;
 
+    justify-content: center;
+    align-items: center;
+
+    width: 36px;
+    height: 36px;
+    border-bottom: 2px solid white;
+
+    padding: 0px;
+    /* border-bottom: 2px solid #600; */
+
+    filter: opacity(0.8);
+  }
+   .cart {
+    padding-left: 0px;
+    padding: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+
+    width: 36px;
+    height: 36px;
+    border-radius: 0%;
+
+    margin-left: 0px;
+    background-color: transparent;
+    border-bottom: 2px solid white;
+
+    filter: opacity(0.8);
+  }
   .my-input-form:focus {
     
 
@@ -553,25 +593,7 @@ margin-top: 2px;
     padding: 0;
     background-color: white;
   }
-  .navbar-items {
-    padding: 20px;
-   
-  }
-  .user {
-    border: none;
 
-    justify-content: center;
-    align-items: center;
-
-    width: 36px;
-    height: 36px;
-    border-bottom: 2px solid white;
-
-    padding: 0px;
-    /* border-bottom: 2px solid #600; */
-
-    filter: opacity(0.8);
-  }
   .user:hover {
     border: 1px solid #ccc;
     border-top: none;
@@ -584,23 +606,7 @@ margin-top: 2px;
     border-bottom: 2px solid white;
   }
 
-  .cart {
-    padding-left: 0px;
-    padding: 0px;
-    border-top: 0px;
-    border-right: 0px;
-    border-left: 0px;
-
-    width: 36px;
-    height: 36px;
-    border-radius: 0%;
-
-    margin-left: 0px;
-    background-color: transparent;
-    border-bottom: 2px solid white;
-
-    filter: opacity(0.8);
-  }
+ 
   .cart:hover {
     filter: opacity(1.5);
     box-shadow: none;
@@ -651,10 +657,7 @@ margin-top: 2px;
   }
 }
 
-.navbar-small {
-  margin-bottom: 0;
-  padding-right: 0px;
-}
+
 /* màn nhỏ*/
 @media (max-width: 767px) {
   .slider-inside .slider-group > div {

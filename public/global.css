@@ -285,35 +285,146 @@ margin-top: 2px;
     filter: opacity(1.5);
   }
 
+
+.search-menu{
+  display: none;
+}
+  
+  .btn.off-shut:focus{
+  box-shadow: none;
+}
+ 
   .navbar-part {
     display: flex;
     justify-content: start;
     margin-bottom: 20px;
   }
 
+.off-shut {
+  display: block;
+  margin-left: 285px;
+  position: fixed;
+}
+ .inside {
+    display: flex;
+    padding-bottom: 10px;
+    padding-right: 6px;
+  }
+  .icon {
+    padding-bottom: 10px;
+  }
+
+   .section-header {
+    flex-direction: column;
+    position: relative;
+    display: flex;
+  }
+  .right-component {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    order: 2;
+  }
+
+  .two-part {
+    display: flex;
+    justify-content: end;
+    position: relative;
+    margin-bottom: 18px;
+    margin-top:18px;
+
+    order: 1;
+  }
+
+  
+  .search-bar {
+    order: 2;
+  }
+
+  .nav-component {
+    /* margin-bottom: 10px; */
+    /* position: absolute;
+    margin-bottom: 100px; */
+    order: 1;
+    /* margin-bottom: 39px; */
+    position: absolute;
+
+  }
+
    .my-input-form {
-    border-radius: 0%;
-    border-top: none;
-    border-left: none;
-    border-right: none;
     margin-bottom: 10px;
-    border-bottom: 1px solid #ccc;
+    justify-content: center;
+    border-radius: 0%;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    border: 1px solid #ececec;
     outline: none;
-    background-color: transparent;
-    width: 684px;
-    height: 42px;
+    background-color: #f5f5f5;
+    height: 40px;
     padding-bottom: 0px;
-    padding-left: 12px;
+    /* padding-left: 12px; */
     padding-top: 0px;
     filter: opacity (0.8);
   }
+  .navbar-toggler {
+    /* margin-bottom: 130px; */
+    border: none;
+    /* margin-right: px; */
+    position: relative;
+    padding-top: 22px;
+
+  }
+
+
+  .navbar-items {
+    padding: 20px;
+   
+  }
+  .navbar-small {
+  margin-bottom: 0;
+  padding-right: 0px;
+}
+  .user {
+    border: none;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 36px;
+    height: 36px;
+    border-bottom: 2px solid white;
+
+    padding: 0px;
+    /* border-bottom: 2px solid #600; */
+
+    filter: opacity(0.8);
+  }
+   .cart {
+    padding-left: 0px;
+    padding: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+
+    width: 36px;
+    height: 36px;
+    border-radius: 0%;
+
+    margin-left: 0px;
+    background-color: transparent;
+    border-bottom: 2px solid white;
+
+    filter: opacity(0.8);
+  }
   .my-input-form:focus {
-    border-top: none;
-    border-left: none;
-    border-right: none;
+    
 
-    border-bottom: 1px solid black;
-
+    border: 1px solid black;
+    background-color: white;
     filter: opacity (1.5);
     box-shadow: none;
   }
@@ -325,13 +436,11 @@ margin-top: 2px;
     box-shadow: none;
   }
 
-  .navbar-toggler {
-    margin-bottom: 15px;
-    border: none;
-    /* margin-bottom: 0px; */
-    border: 1px solid #ccc;
+  
 
-    /* margin-right: 500px; */
+  .navbar-toggler:hover {
+    filter: opacity (1.5);
+    box-shadow: none;
   }
 
   .navbar-toggler:hover {
@@ -384,25 +493,7 @@ margin-top: 2px;
     padding-bottom: 8px;
   }
 
-  .navbar-items {
-    padding: 0px;
-  }
-
-  .user {
-    border: none;
-
-    justify-content: center;
-    align-items: center;
-
-    width: 36px;
-    height: 36px;
-    border-bottom: 2px solid white;
-
-    padding: 0px;
-    /* border-bottom: 2px solid #600; */
-
-    filter: opacity(0.8);
-  }
+ 
   .user:hover {
     border: 1px solid #ccc;
     border-top: none;
@@ -415,23 +506,7 @@ margin-top: 2px;
     border-bottom: 2px solid white;
   }
 
-  .cart {
-    padding-left: 0px;
-    padding: 0px;
-    border-top: 0px;
-    border-right: 0px;
-    border-left: 0px;
-
-    width: 36px;
-    height: 36px;
-    border-radius: 0%;
-
-    margin-left: 0px;
-    background-color: transparent;
-    border-bottom: 2px solid white;
-
-    filter: opacity(0.8);
-  }
+  
   .cart:hover {
     filter: opacity(1.5);
     box-shadow: none;
@@ -441,9 +516,7 @@ margin-top: 2px;
   .search-button {
     padding-right: 0px;
   }
-  .navbar-small {
-    margin-bottom: 0;
-  }
+ 
 }
 /* màn nhỏ */
 @media (max-width: 767px) {

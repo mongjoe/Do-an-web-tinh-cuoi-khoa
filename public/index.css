@@ -16,7 +16,9 @@
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
   border: 1px solid black;
 }
-
+.user:focus{
+  border:none;
+}
 .series-title {
   padding-left: 8px;
   padding-right: 8px;
@@ -708,7 +710,9 @@
   .product-price-news {
     font-size: 14px;
   }
-
+.user:focus{
+  border:1px solid white;
+}
   .modal-user-image {
     justify-content: center;
     align-items: center;
@@ -981,7 +985,7 @@
   }
 
   .user:hover {
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     border-top: none;
     border-right: none;
 
@@ -1159,6 +1163,7 @@ h3 {
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
+  margin-bottom: 10px;
 }
 
 .price-product {

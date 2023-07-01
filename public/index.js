@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+
 //modal
 // Tắt hiệu ứng fade in của modal khi trang được tải
 document.addEventListener("DOMContentLoaded", function () {

@@ -1,5 +1,6 @@
 // Lấy tất cả các hàng trong bảng giỏ hàng
 const cartRows = $("#cart tbody tr");
+// Sử dụng $("#cart tbody tr") để lấy tất cả các hàng trong phần tbody của bảng có id "cart".
 
 // Tạo sự kiện cho nút chỉnh sửa số lượng sản phẩm
 const quantityInputs = $("#cart input[type='number']");
@@ -15,11 +16,12 @@ deleteButtons.on(
 
 // Tính tổng tiền cho giỏ hàng
 calculateTotal();
-
+// Sử dụng $("#cart input[type='number']") để lấy tất cả các input có type là "number" trong phần tử có id "cart".
 function updateSubtotal(event) {
   const input = $(event.target);
   const row = input.closest("tr");
-
+  // Sử dụng .on("input", updateSubtotal) để gắn sự kiện input cho từng input.
+  // Khi số lượng sản phẩm được chỉnh sửa, sự kiện "input" sẽ kích hoạt và gọi hàm updateSubtotal().
   const priceElement = row.find("td[data-th='Đơn giá']");
   const subtotalElement = row.find("td[data-th='Tổng tiền']");
 
@@ -32,6 +34,8 @@ function updateSubtotal(event) {
 
   calculateTotal();
 }
+// Kết quả được lưu trữ trong biến cartRows.
+// Tạo sự kiện cho nút chỉnh sửa số lượng sản phẩm:
 
 function removeProduct(event) {
   const button = $(event.target);

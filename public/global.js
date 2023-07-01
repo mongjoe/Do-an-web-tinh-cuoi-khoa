@@ -1,3 +1,4 @@
+// nút cuộn
 function scrollToTop() {
   window.scrollTo({
     top: 0,

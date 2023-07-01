@@ -23,7 +23,9 @@ html {
   border: 1px solid black;
 }
 
-
+.user:focus{
+  border:none;
+}
 
 
 .dropdown-menu
@@ -600,7 +602,9 @@ margin-top: 2px;
   .breadcrumb {
   padding-left:20px
 }
-
+.user:focus{
+  border:none;
+}
   .card .img-wrapper {
     height: 30em;
   }

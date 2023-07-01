@@ -292,7 +292,7 @@ margin-top: 2px;
   }
 }
 /* màn ipad */
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .card-title {
     font-size: 16px;
   }
@@ -602,9 +602,7 @@ margin-top: 2px;
   .breadcrumb {
   padding-left:20px
 }
-.user:focus{
-  border:none;
-}
+
   .card .img-wrapper {
     height: 30em;
   }

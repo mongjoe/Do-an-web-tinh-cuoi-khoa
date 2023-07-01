@@ -859,11 +859,11 @@
     box-shadow: none;
   }
   .user {
-    border: none;
-    opacity: 0.8;
+      border: none;
+    /* opacity: 0.8; */
     justify-content: center;
     align-items: center;
-
+    margin-top: 2px;
     width: 36px;
     height: 36px;
     border-bottom: 2px solid white;
@@ -985,7 +985,7 @@
   }
 
   .user:hover {
-    /* border: 1px solid #ccc; */
+    border: 1px solid #ccc;
     border-top: none;
     border-right: none;
 

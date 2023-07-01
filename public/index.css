@@ -37,6 +37,11 @@
   border-bottom: 10px solid black;
 }
 
+.my-input-form3:focus {
+border:1px solid black;
+box-shadow: none;
+}
+
 .my-input-form2 {
   border: 1px solid #ccc;
 }

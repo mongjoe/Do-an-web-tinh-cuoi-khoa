@@ -63,7 +63,7 @@ html {
 }
 
 /* màn lớn */
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
   .my-input-form {
     display: block;
     border-bottom: 1px solid black;

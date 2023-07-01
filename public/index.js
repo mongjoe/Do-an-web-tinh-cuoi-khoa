@@ -1,25 +1,24 @@
 //offcanvas close-button
 
-  document.addEventListener("DOMContentLoaded", function() {
-    // Lấy tham chiếu đến nút "btn btn-close"
-    var closeButton = document.querySelector(".btn.btn-close");
+document.addEventListener("DOMContentLoaded", function () {
+  // Lấy tham chiếu đến nút "btn btn-close"
+  var closeButton = document.querySelector(".btn.btn-close");
 
-    // Lắng nghe sự kiện click trên nút "btn btn-close"
-    closeButton.addEventListener("click", function() {
-      // Đóng offcanvas
-      var offcanvas = document.querySelector(".offcanvas");
-      var offcanvasInstance = bootstrap.Offcanvas.getInstance(offcanvas);
-      offcanvasInstance.hide();
-    });
+  // Lắng nghe sự kiện click trên nút "btn btn-close"
+  closeButton.addEventListener("click", function () {
+    // Đóng offcanvas
+    var offcanvas = document.querySelector(".offcanvas");
+    var offcanvasInstance = bootstrap.Offcanvas.getInstance(offcanvas);
+    offcanvasInstance.hide();
   });
+});
 
- //modal
- // Tắt hiệu ứng fade in của modal khi trang được tải
-  document.addEventListener('DOMContentLoaded', function() {
-    var modal = document.getElementById('exampleModal');
-    modal.classList.remove('fade');
-  });
-
+//modal
+// Tắt hiệu ứng fade in của modal khi trang được tải
+document.addEventListener("DOMContentLoaded", function () {
+  var modal = document.getElementById("exampleModal");
+  modal.classList.remove("fade");
+});
 
 //carousel
 
@@ -78,12 +77,6 @@ multipleCardCarousel.addEventListener("slide.bs.carousel", function () {
 //Thêm hiệu ứng chuyển cảnh mượt cho slide
 // document.querySelector(".slider-inside").style.scrollBehavior = "smooth";
 
-
-
-
-
-
-
 // scroll to top
 function scrollToTop() {
   window.scrollTo({
@@ -129,40 +122,38 @@ document.querySelector(".user").addEventListener("click", function () {
 
 //
 
-
 //điều hướng liên hệ
 // Bắt sự kiện click vào đường liên kết
-  $(document).ready(function () {
-    $("a[data-target]").on("click", function (event) {
-      event.preventDefault();
+$(document).ready(function () {
+  $("a[data-target]").on("click", function (event) {
+    event.preventDefault();
 
-      var target = $(this).data("target");
-      var $targetElement = $(target);
+    var target = $(this).data("target");
+    var $targetElement = $(target);
 
-      $("html, body").animate(
-        {
-          scrollTop: $targetElement.offset().top,
-        },
-        500
-      );
-    });
-  });
-
-
-  document.addEventListener("DOMContentLoaded", function () {
-    // Lấy tham chiếu đến nút tìm kiếm và form tìm kiếm
-    var searchButton = document.getElementById("searchIcon");
-    var searchInput = document.querySelector(
-      "#exampleModal input[type='search']"
+    $("html, body").animate(
+      {
+        scrollTop: $targetElement.offset().top,
+      },
+      500
     );
-
-    // Lắng nghe sự kiện click trên nút tìm kiếm
-    searchButton.addEventListener("click", function () {
-      // Mở modal
-      var modal = new bootstrap.Modal(document.getElementById("exampleModal"));
-      modal.show();
-
-      // Focus vào ô nhập liệu trong form tìm kiếm
-      searchInput.focus();
-    });
   });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Lấy tham chiếu đến nút tìm kiếm và form tìm kiếm
+  var searchButton = document.getElementById("searchIcon");
+  var searchInput = document.querySelector(
+    "#exampleModal input[type='search']"
+  );
+
+  // Lắng nghe sự kiện click trên nút tìm kiếm
+  searchButton.addEventListener("click", function () {
+    // Mở modal
+    var modal = new bootstrap.Modal(document.getElementById("exampleModal"));
+    modal.show();
+
+    // Focus vào ô nhập liệu trong form tìm kiếm
+    searchInput.focus();
+  });
+});

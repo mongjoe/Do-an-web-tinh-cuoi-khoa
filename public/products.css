@@ -110,7 +110,7 @@ border-left : 1px splid #bbb;
 .product-below-2 {
   border: 1px solid #eeee;
   /* border-left: none; */
-  border-top: none;
+  /* border-top: none; */
   /* border-right: none; */
 }
 
@@ -141,12 +141,33 @@ border-left : 1px splid #bbb;
   filter: opacity(0.75);
 }
 
-.product-title {
-  font-size: 14px;
-  text-align: start;
-  margin-bottom: 10px;
-  font-weight: 500;
+.series-title {
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-bottom:10px;
 }
+
+.price-first{
+  display:
+inline;
+font-family: 'Oswald';
+font-size:
+14px;
+/* font-weight:
+400; */
+line-height:
+21px;
+}
+
+.product-title {
+  /* flex-basis: 0%; */
+  font-family: 'Oswald';
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom:15px;
+}
+
 
 
 .accordion-body:focus,
@@ -181,8 +202,7 @@ background-color: white;
   color:none;
 } 
 .product-part{
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
-
+  
 }
 
 

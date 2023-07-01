@@ -61,7 +61,7 @@ html {
 }
 
 /* màn lớn */
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .my-input-form {
     display: block;
     border-bottom: 1px solid black;
@@ -83,6 +83,15 @@ html {
   .breadcrumb {
   padding-left:50px
 }
+
+.my-input-form3:focus{
+  border: 1px solid black;
+  box-shadow: none;
+}
+
+.nav-link {
+    color: black;
+  }
    .arrow-up {
     position: absolute;
     top: -10px;
@@ -281,7 +290,7 @@ margin-top: 2px;
   }
 }
 /* màn ipad */
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .card-title {
     font-size: 16px;
   }
@@ -363,7 +372,9 @@ margin-top: 2px;
     flex-direction: column;
     order: 2;
   }
-
+ .breadcrumb {
+  padding-left:20px
+}
   .two-part {
     display: flex;
     justify-content: end;
